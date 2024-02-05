@@ -3,7 +3,7 @@
 ---
 
 
-![drexel-dragon-all_gold.png](/img/user/drexel-dragon-all_gold.png)
+![drexel-dragon-all_gold.png](/img/user/Drexel%20Perforce/All%20Media/drexel-dragon-all_gold.png)
 # Drexel Perforce Streams - Knowledge Hub
 
 Welcome to the **Perforce Streams Knowledge Hub**, a comprehensive resource designed for students and faculty learning about Perforce and Perforce Streams. 
