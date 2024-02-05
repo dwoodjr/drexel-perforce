@@ -8,7 +8,14 @@
 Welcome to the **Perforce Streams Knowledge Hub**, a comprehensive resource designed for students and faculty learning about Perforce and Perforce Streams. 
 
 ---
+## Surveys and Assessments
 
+Take a moment to help us help you, and to better gauge your understanding of Perforce and other Version Control Systems (VCS) by taking one of the following.
+
+- New User Survey
+- [[Experienced User Assessment\|Experienced User Assessment]]
+
+---
 ## Getting Started with Perforce
 
 Here you'll find everything you need to get started with Perforce, from installation to basic commands.
