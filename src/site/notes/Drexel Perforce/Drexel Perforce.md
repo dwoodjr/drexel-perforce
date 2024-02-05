@@ -12,7 +12,7 @@ Welcome to the **Perforce Streams Knowledge Hub**, a comprehensive resource desi
 
 Take a moment to help us help you, and to better gauge your understanding of Perforce and other Version Control Systems (VCS) by taking one of the following.
 
-- New User Survey
+- [[Drexel Perforce/New User Survey\|New User Survey]]
 - [[Drexel Perforce/Experienced User Assessment\|Experienced User Assessment]]
 
 ---
