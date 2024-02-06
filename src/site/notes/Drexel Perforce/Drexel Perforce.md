@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/drexel-perforce/drexel-perforce/","tags":["gardenEntry"]}
+{"dg-publish":true,"permalink":"/drexel-perforce/drexel-perforce/","contentClasses":"drexel","tags":["gardenEntry"]}
 ---
 
 ![drexel-dragon-all_gold.png](/img/user/Drexel%20Perforce/All%20Media/drexel-dragon-all_gold.png)
@@ -59,8 +59,8 @@ Tips and tricks to use Perforce and Perforce Streams effectively and efficiently
 
 Additional resources to further your understanding and knowledge.
 
-- [Official Perforce Documentation](https://www.perforce.com/manuals/)
-- [Community Forums](https://forums.perforce.com/)
+- Official Perforce Documentation
+- Community Forums
 - FAQs
 
 ---
