@@ -1,13 +1,34 @@
 body {
-    /***
-      ADD YOUR CUSTOM STYLIING HERE. (INSIDE THE body {...} section.)
-      IT WILL TAKE PRECEDENCE OVER THE STYLING IN THE STYLE.CSS FILE.
-   ***/
-    //  background-color: white;
-    //  .content {
-    //   font-size: 14px;
-    //  }
-    //  h1 {
-    //   color: black;
-    //  }
+    /* Drexel University Styling */
+    font-family: 'Arial', sans-serif; /* Default typeface for most page text */
+    background-color: #E1E1E0; /* Custom Background Color */
+    color: #003B5C; /* Drexel Blue for Text Color */
+
+    /* Headers styled with Futura or similar, uppercase and bold for emphasis */
+    h1, h2, h3, h4, h5, h6 {
+     font-family: 'Futura', sans-serif; /* Using Futura for headers */
+        text-transform: uppercase;
+        font-weight: 500; /* Medium weight for a semi-condensed look */
+        color: #003B5C; /* Drexel Blue */
+    }
+
+    /* Links styled with Drexel Gold */
+    a {
+     color: #FFD600; /* Drexel Gold for Links */
+        text-decoration: none; /* No underline by default */
+    }
+    a:hover {
+     text-decoration: underline; /* Underline on hover */
+    }
+
+    /* Blockquotes with Georgia, italicized for emphasis */
+    blockquote {
+     font-family: 'Georgia', serif;
+     font-style: italic;
+     border-left: 4px solid #003B5C; /* Drexel Blue border for blockquotes */
+        padding-left: 16px;
+        color: #A7A9AC; /* Drexel Gray for text */
+    }
+
+    /* Additional custom styling as needed */
 }
