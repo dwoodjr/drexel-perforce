@@ -60,7 +60,7 @@ Tips and tricks to use Perforce and Perforce Streams effectively and efficiently
 Additional resources to further your understanding and knowledge.
 
 - [Official Perforce Documentation (P4V)]([Helix Core Visual Client (P4V) Guide (2023.4) (perforce.com)](https://www.perforce.com/manuals/p4v/Content/P4V/about.whatsnew.html#What's_new_in_the_P4V_guide))
-- [Perforce Video Tutorials]([Video Tutorials | Perforce](https://www.perforce.com/support/video-tutorials?field_product_target_id=459&field_role_target_id=337))
-- [Community Forums + FAQs]([Community Portal and FAQ | Perforce](https://www.perforce.com/support/community-portal-faq))
+- [Perforce Video Tutorials]([Video Tutorials | Perforce](https://www.perforce.com/support/video-tutorials?field_product_target_id=459&field_role_target_id=337)
+- [Community Forums + FAQs]([Community Portal and FAQ | Perforce](https://www.perforce.com/support/community-portal-faq)
 
 ---
