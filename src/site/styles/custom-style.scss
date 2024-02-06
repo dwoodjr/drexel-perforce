@@ -17,6 +17,12 @@ body {
      color: #FFD600; /* Drexel Gold for Links */
         text-decoration: none; /* No underline by default */
     }
+    /* Targets links that start with 'http' and not containing your domain name as an assumption for external links */
+    a[href^="http"]:not([href*="yourdomain.com"]),
+    a[href^="https"]:not([href*="yourdomain.com"]) {
+        color: #FFD600; /* Drexel Gold for external links */
+        text-decoration: none; /* Optional: removes underline from links */
+    }
     a:hover {
      text-decoration: underline; /* Underline on hover */
     }
