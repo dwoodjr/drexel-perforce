@@ -12,26 +12,26 @@ Welcome to the **Perforce Streams Knowledge Hub**, a comprehensive resource desi
 
 Take a moment to help us help you, and to better gauge your understanding of Perforce and other Version Control Systems (VCS) by taking one of the following.
 
-- [[Drexel Perforce/New User Survey\|New User Survey]]
-- [[Drexel Perforce/Experienced User Assessment\|Experienced User Assessment]]
+- [[Drexel Perforce/Surveys and Assessments/New User Survey\|New User Survey]]
+- [[Drexel Perforce/Surveys and Assessments/Experienced User Assessment\|Experienced User Assessment]]
 
 ---
 ## Getting Started with Perforce
 
 Here you'll find everything you need to get started with Perforce, from installation to basic commands.
 
-- Installation Guide
-- Introduction to Perforce
-- First Steps in Perforce
+- [[Drexel Perforce/Getting Started/Introduction to Perforce\|Introduction to Perforce]]
+- [[Drexel Perforce/Getting Started/Installation Guide\|Installation Guide]]
+- [[Drexel Perforce/Getting Started/First Steps in Perforce\|First Steps in Perforce]]
 
 ---
 
-## Perforce Streams Explained
+## Perforce Streams
 
 Dive deep into Perforce Streams, understand their structure, and discover how they can enhance your version control experience.
 
-- What are Perforce Streams?
-- Working with Streams
+- [[Drexel Perforce/Perforce Streams/Perforce Streams\|Perforce Streams]]
+- [[Drexel Perforce/Perforce Streams/Working with Streams\|Working with Streams]]
 - Advanced Streams Concepts
 
 ---
