@@ -23,7 +23,7 @@ Perforce Streams provide a structured way to manage branches in your projects, m
 
 **Accessing P4V**:
 - **VPN Connection Required**: Before proceeding, ensure that you are logged in and connected to the [Drexel VPN using Cisco AnyConnect](https://drexel.edu/it/help/a-z/VPN/).
-- <img src="https://photos.onedrive.com/share/B08DE2251F1B33A4!324261?cid=B08DE2251F1B33A4&resId=B08DE2251F1B33A4!324261&authkey=!ABbTgygL-40ddFE&ithint=photo&e=qUyXbh" alt="VPN Connect">
+- <img src="/src/img/vpn_connect.gif" alt="VPN Connect">
 
 	![vpn_connect.gif](/img/user/Drexel%20Perforce/All%20Media/vpn_connect.gif)
 - Launch P4V from your applications or programs list.
