@@ -22,6 +22,7 @@
 Perforce Streams provide a structured way to manage branches in your projects, making it easier to handle merges and integrations.
 
 **Accessing P4V**:
+- **VPN Connection Required**: Before proceeding, ensure that you are logged in and connected to the Drexel VPN using Cisco AnyConnect.
 - Launch P4V from your applications or programs list.
 - Connect to the Perforce server by entering the server address provided followed by the port number (the default is server port is 1666). 
 		`perforce.westphal.drexel.edu:1666`
