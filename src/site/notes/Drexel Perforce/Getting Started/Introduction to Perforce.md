@@ -21,11 +21,13 @@ A Version Control System is crucial for several reasons:
 ![Perforce-LOGO-BLACK.png](/img/user/Drexel%20Perforce/All%20Media/Perforce-LOGO-BLACK.png)
 
 
+
 #### Perforce Streams: Simplifying Branch Management
 
 Perforce Streams are a key feature that set Perforce apart from other VCS systems. Streams provide a hierarchical branch model that simplifies branch creation, merging, and integration. This structure is especially beneficial in game development, where different teams or individuals may be working on separate features or components of a game. Streams ensure that these parallel development efforts remain organized and manageable.
 
 ![branches-with-brains.webp](/img/user/Drexel%20Perforce/All%20Media/branches-with-brains.webp)
+
 
 #### P4V: The Perforce Visual Client
 
