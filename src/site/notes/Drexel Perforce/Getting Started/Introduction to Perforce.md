@@ -16,7 +16,7 @@ A Version Control System is crucial for several reasons:
 ---
 #### What is Perforce?
 
-[Perforce]([Perforce Helix Core Version Control | Perforce](https://www.perforce.com/products/helix-core)) is a robust VCS that manages changes to documents, programs, and other information stored as files in a repository. It's designed to handle large volumes of data and complex project structures, making it an ideal choice for game development and virtual production projects where multiple team members may be working on different aspects of a game simultaneously.
+[Perforce](https://www.perforce.com/products/helix-core) is a robust VCS that manages changes to documents, programs, and other information stored as files in a repository. It's designed to handle large volumes of data and complex project structures, making it an ideal choice for game development and virtual production projects where multiple team members may be working on different aspects of a game simultaneously.
 
 ![Perforce-LOGO-BLACK.png](/img/user/Drexel%20Perforce/All%20Media/Perforce-LOGO-BLACK.png)
 
