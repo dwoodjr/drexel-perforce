@@ -65,7 +65,7 @@ A workspace is your local copy of files from the depot, where you can work on th
 - **Open Workspaces Tab**: In P4V, navigate to `View > Workspaces`.
 - **Create New Workspace**:
   - Click the 'New Workspace' button to open the dialog box.
-  - **Name**: Assign a descriptive name, incorporating your Drexel ID, name or initials and the project or group (e.g., "abc123_GameDev").
+  - **Name**: Assign a descriptive name, incorporating your Drexel ID, name or initials and the project or group (e.g., `abc123_GameDev`).
   - **Stream**: Select the previously created stream to link your workspace.
 - **Root Directory**: Select a local directory for file storage, managed by P4V. This directory can be on your machine's main drive or an external drive. 
   - **External Drive Considerations**: If opting for an external drive, ensure it's an SSD with sufficient read/write speeds. Additionally, configure it according to [Perforce Recommendations](https://portal.perforce.com/s/article/2957) to ensure optimal performance and reliability.
