@@ -4,6 +4,9 @@
     "description": "",
     "main": "index.js",
     "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
         "start": "npm-run-all get-theme build:sass --parallel watch:*",
         "watch:sass": "sass --watch src/site/styles:dist/styles",
         "watch:eleventy": "cross-env ELEVENTY_ENV=dev eleventy --serve",
@@ -41,6 +44,9 @@
         "markdown-it-mathjax3": "^4.3.1",
         "markdown-it-plantuml": "^1.4.1",
         "markdown-it-task-checkbox": "^1.0.6",
-        "npm-run-all": "^4.1.5"
+        "next": "^14.1.0",
+        "npm-run-all": "^4.1.5",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
     }
 }
