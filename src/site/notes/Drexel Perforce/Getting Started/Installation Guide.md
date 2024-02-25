@@ -22,10 +22,12 @@
 Perforce Streams provide a structured way to manage branches in your projects, making it easier to handle merges and integrations.
 
 **Accessing P4V**:
-- **VPN Connection Required**: Before proceeding, ensure that you are logged in and connected to the Drexel VPN using Cisco AnyConnect.
+- **VPN Connection Required**: Before proceeding, ensure that you are logged in and connected to the [Drexel VPN using Cisco AnyConnect](https://drexel.edu/it/help/a-z/VPN/).
+	![vpn_connect.gif](/img/user/Drexel%20Perforce/All%20Media/vpn_connect.gif)
 - Launch P4V from your applications or programs list.
 - Connect to the Perforce server by entering the server address provided followed by the port number (the default is server port is 1666). 
 		`perforce.westphal.drexel.edu:1666`
+		![perforce_server_port.png](/img/user/Drexel%20Perforce/All%20Media/perforce_server_port.png)
 - Log in with your provided credentials (username and password).
 
 
@@ -41,34 +43,41 @@ Perforce Streams provide a structured way to manage branches in your projects, m
 	- Provide a brief description of the depot's intended use or the course it supports to help users understand its role.
 	- Retain the default settings for all other stream depot creation properties.
 	- Click 'OK' to create the depot.
+		![p4admin_depot_newCreate.gif](/img/user/Drexel%20Perforce/All%20Media/p4admin_depot_newCreate.gif)
 - **Confirmation and Setup**: After creating the depot, ensure it's properly configured for the users. This might involve setting up access permissions and stream structures to align with the course or project requirements.
 
 
 **Creating Your First Stream in P4V**:
-- **Navigate to the 'Streams' tab:**
+- Navigate to the **Streams** tab:
   - This can be accessed through the menu by navigating to `View > Streams` or by using the shortcut `Ctrl + 7` (Windows/Linux) or `Cmd + 7` (macOS).
+	  ![p4v_streams_tab.gif](/img/user/Drexel%20Perforce/All%20Media/p4v_streams_tab.gif)
 - Right-click in the window and select ***New Stream...***.
 - Select ***Mainline*** as the stream type. This will be your project's main branch (also called the trunk).
 - Name your stream (e.g., `main`) and provide a description if needed.
 - Click 'OK' to create the stream.
+		![p4v_streams_newCreate.gif](/img/user/Drexel%20Perforce/All%20Media/p4v_streams_newCreate.gif)
 - After this, other streams can be created either before or after populating the mainline. The standard stream depot setup includes:
 	  **Mainline Stream (`//depot/mainline`)**: The project's backbone for stable code and assets. It's the top-level stream from which others branch off.
 	  **Development Stream (`//depot/mainline/dev`)**: For ongoing development like new features and bug fixes, branching directly off the mainline.
 	  **Art Asset Integration Stream (`//depot/mainline/dev/art`)**: Specialized for integrating and testing new art assets, it branches off from the development stream.
 	  **Build (Release) Stream (`//depot/mainline/build`)**: Focused on preparing the project for release, directly branched from the mainline for easy merging of stable features and assets.
-
+	
+		![p4v_ideal_streams_setup.png](/img/user/Drexel%20Perforce/All%20Media/p4v_ideal_streams_setup.png)
+		The Streams setup can be confirmed by accessing the ***Stream Graph Tab*** through the menu by navigating to `View > Streams Graph` or by using the shortcut `Alt + 7` (Windows/Linux) or `Opt + 7` (macOS).
 ---
 ### Configuring Your Workspace
 
 A workspace is your local copy of files from the depot, where you can work on them before submitting changes back to the server.
 
 ### Creating a Workspace
-- **Open Workspaces Tab**: In P4V, navigate to `View > Workspaces`.
+- **Open Workspaces Tab**: In P4V, navigate to `View > Workspaces` or by using the shortcut `Ctrl + 5` (Windows/Linux) or `Cmd + 5` (macOS).
+	![p4v_workspace_tab.gif](/img/user/Drexel%20Perforce/All%20Media/p4v_workspace_tab.gif)
 - **Create New Workspace**:
   - Click the 'New Workspace' button to open the dialog box.
   - **Name**: Assign a descriptive name, incorporating your Drexel ID, name or initials and the project or group (e.g., `abc123_GameDev`).
   - **Stream**: Select the previously created stream to link your workspace.
 - **Root Directory**: Select a local directory for file storage, managed by P4V. This directory can be on your machine's main drive or an external drive. 
+	  ![p4v_workspace_newCreate.gif](/img/user/Drexel%20Perforce/All%20Media/p4v_workspace_newCreate.gif)
   - **External Drive Considerations**: If opting for an external drive, ensure it's an SSD with sufficient read/write speeds. Additionally, configure it according to [Perforce Recommendations](https://portal.perforce.com/s/article/2957) to ensure optimal performance and reliability.
 
 ### Populating Your Workspace
