@@ -78,7 +78,9 @@ A workspace is your local copy of files from the depot, where you can work on th
   - **Name**: Assign a descriptive name, incorporating your Drexel ID, name or initials and the project or group (e.g., `abc123_GameDev`).
   - **Stream**: Select the previously created stream to link your workspace.
 - **Root Directory**: Select a local directory for file storage, managed by P4V. This directory can be on your machine's main drive or an external drive. 
-	  <img src="https://onedrive.live.com/embed?resid=B08DE2251F1B33A4%21324259&authkey=%21AOJl5JWH7JVfDyU&width=720&height=966" width="720" height="966" />
+<iframe src="https://www.dropbox.com/scl/fi/lhamgcfqtcznqiipmhzjr/p4v_workspace_newCreate.gif" height="480px" width="640px" allowfullscreen></iframe>
+	 <img src="https://www.dropbox.com/scl/fi/lhamgcfqtcznqiipmhzjr/p4v_workspace_newCreate.gif" height="480" width="640" alt="Description of GIF">
+
   - **External Drive Considerations**: If opting for an external drive, ensure it's an SSD with sufficient read/write speeds. Additionally, configure it according to [Perforce Recommendations](https://portal.perforce.com/s/article/2957) to ensure optimal performance and reliability.
 
 ### Populating Your Workspace
