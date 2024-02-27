@@ -79,7 +79,7 @@ A workspace is your local copy of files from the depot, where you can work on th
   - **Stream**: Select the previously created stream to link your workspace.
 - **Root Directory**: Select a local directory for file storage, managed by P4V. This directory can be on your machine's main drive or an external drive. 
 
-<iframe src="https://www.dropbox.com/scl/fi/chpt0srwdqfn9xdo0wdo5/p4v_workspace_newCreate.mp4?rlkey=mh50p4rw7hkn9hlemiru6fc3i&dl=0" height="980" width="640" allowfullscreen></iframe>
+<iframe src="https://onedrive.live.com/embed?resid=B08DE2251F1B33A4%21324271&authkey=!AFWsksmHTegUVPc" width="320" height="400" frameborder="0" scrolling="no" allowfullscreen></iframe>
 
   - **External Drive Considerations**: If opting for an external drive, ensure it's an SSD with sufficient read/write speeds. Additionally, configure it according to [Perforce Recommendations](https://portal.perforce.com/s/article/2957) to ensure optimal performance and reliability.
 
