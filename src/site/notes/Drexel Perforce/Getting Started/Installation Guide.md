@@ -23,7 +23,7 @@ Perforce Streams provide a structured way to manage branches in your projects, m
 
 **Accessing P4V**:
 - **VPN Connection Required**: Before proceeding, ensure that you are logged in and connected to the [Drexel VPN using Cisco AnyConnect](https://drexel.edu/it/help/a-z/VPN/).
-<img src="https://onedrive.live.com/embed?resid=B08DE2251F1B33A4%21324261&authkey=%21AAqBpEmCuOHiYIM&width=630&height=358" width="630" height="358" />
+<img src="https://i.postimg.cc/7Y93gdd2/vpn-connect.gif" width="630" height="358" />
 
 - Launch P4V from your applications or programs list.
 - Connect to the Perforce server by entering the server address provided followed by the port number (the default is server port is 1666). 
@@ -44,19 +44,19 @@ Perforce Streams provide a structured way to manage branches in your projects, m
 	- Provide a brief description of the depot's intended use or the course it supports to help users understand its role.
 	- Retain the default settings for all other stream depot creation properties.
 	- Click 'OK' to create the depot.
-		<img src="https://onedrive.live.com/embed?resid=B08DE2251F1B33A4%21324255&authkey=%21APum3PaEebSMIpQ&width=685&height=351" width="685" height="351" />
+		<img src="https://i.postimg.cc/8PNdfNKG/p4admin-depot-new-Create.gif" width="685" height="351" />
 - **Confirmation and Setup**: After creating the depot, ensure it's properly configured for the users. This might involve setting up access permissions and stream structures to align with the course or project requirements.
 
 
 **Creating Your First Stream in P4V**:
 - Navigate to the **Streams** tab:
   - This can be accessed through the menu by navigating to `View > Streams` or by using the shortcut `Ctrl + 7` (Windows/Linux) or `Cmd + 7` (macOS).
-	  <img src="https://onedrive.live.com/embed?resid=B08DE2251F1B33A4%21324254&authkey=%21AJDoLQLcjTPqr6o&width=545&height=640" width="545" height="640" />
+	  <img src="https://i.postimg.cc/gjqvtT01/p4v-streams-tab.gif" width="545" height="640" />
 - Right-click in the window and select ***New Stream...***.
 - Select ***Mainline*** as the stream type. This will be your project's main branch (also called the trunk).
 - Name your stream (e.g., `main`) and provide a description if needed.
 - Click 'OK' to create the stream.
-		<img src="https://onedrive.live.com/embed?resid=B08DE2251F1B33A4%21324258&authkey=%21AJF_RC_kjcW-ClY&width=601&height=979" width="601" height="979" />
+		<img src="https://i.postimg.cc/T3HnsmR2/p4v-streams-new-Create.gif" width="601" height="979" />
 - After this, other streams can be created either before or after populating the mainline. The standard stream depot setup includes:
 	  **Mainline Stream (`//depot/mainline`)**: The project's backbone for stable code and assets. It's the top-level stream from which others branch off.
 	  **Development Stream (`//depot/mainline/dev`)**: For ongoing development like new features and bug fixes, branching directly off the mainline.
@@ -72,14 +72,14 @@ A workspace is your local copy of files from the depot, where you can work on th
 
 ### Creating a Workspace
 - **Open Workspaces Tab**: In P4V, navigate to `View > Workspaces` or by using the shortcut `Ctrl + 5` (Windows/Linux) or `Cmd + 5` (macOS).
-	<img src="https://onedrive.live.com/embed?resid=B08DE2251F1B33A4%21324257&authkey=%21AGbIQaFJcM0Z7vk&width=542&height=578" width="542" height="578" />
+	<img src="https://i.postimg.cc/Y21fShx8/p4v-workspace-tab.gif" width="542" height="578" />
 - **Create New Workspace**:
   - Click the 'New Workspace' button to open the dialog box.
   - **Name**: Assign a descriptive name, incorporating your Drexel ID, name or initials and the project or group (e.g., `abc123_GameDev`).
   - **Stream**: Select the previously created stream to link your workspace.
 - **Root Directory**: Select a local directory for file storage, managed by P4V. This directory can be on your machine's main drive or an external drive. 
 
-<iframe src="https://onedrive.live.com/embed?resid=B08DE2251F1B33A4%21324271&authkey=!AFWsksmHTegUVPc" width="320" height="400" frameborder="0" scrolling="no" allowfullscreen></iframe>
+	<img src="https://i.postimg.cc/q7h2HRRs/p4v-workspace-new-Create.gif" width="720" height="966">
 
   - **External Drive Considerations**: If opting for an external drive, ensure it's an SSD with sufficient read/write speeds. Additionally, configure it according to [Perforce Recommendations](https://portal.perforce.com/s/article/2957) to ensure optimal performance and reliability.
 
