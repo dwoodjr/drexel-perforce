@@ -41,6 +41,7 @@ Dive deep into Perforce Streams, understand their structure, and discover how th
 Hands-on tutorials and real-world examples to guide you through common Perforce tasks and workflows.
 
 - [[Drexel Perforce/Tutorials and Examples/P4 Admin - Bulk Add\|P4 Admin - Bulk Add]]
+- [[Drexel Perforce/Tutorials and Examples/Virtual Streams\|Virtual Streams]]
 - Basic Perforce Commands
 - Branching and Merging with Streams
 - Resolving Conflicts
