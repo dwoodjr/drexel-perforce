@@ -75,3 +75,17 @@ For Super Users within P4 Admin, the Bulk Add Tool facilitates the mass creation
 6. **Completion:**
    - Upon successful execution of all tasks, close the tool. Refresh P4 Admin to view the newly added users, groups, and depots.
 
+#  Passwords
+
+By default, the initial password for all users will be `ChangeMe123!`. New users will be required to **reset** their password on first login.
+
+If a new default password is desired, the `config.ini` can be changed to update the default passwords.
+```JSON
+[DEFAULT]
+EMAIL_DOMAIN = myuniversity.edu
+DEFAULT_PASSWORD = myUniversitySecret#45
+REQUIRE_PASSWORD_RESET = false
+```
+
+---
+Link to Bulk Add GitHub Repo: https://github.com/vertigojc/p4_bulk_project_creator
