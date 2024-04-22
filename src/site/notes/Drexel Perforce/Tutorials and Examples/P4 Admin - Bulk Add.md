@@ -75,7 +75,7 @@ For Super Users within P4 Admin, the Bulk Add Tool facilitates the mass creation
 6. **Completion:**
    - Upon successful execution of all tasks, close the tool. Refresh P4 Admin to view the newly added users, groups, and depots.
 
-#  Passwords
+# Passwords
 
 By default, the initial password for all users will be `ChangeMe123!`. New users will be required to **reset** their password on first login.
 
