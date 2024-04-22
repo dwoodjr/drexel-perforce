@@ -50,3 +50,9 @@ Stream inheritance simplifies merging and integration by defining clear paths fo
 - **Optimize Asset Storage**: Consider using Perforce Helix Core's capabilities for handling large binary files, such as Lazy Copying and Archive Depots, to optimize storage and improve performance.
 	- Lazy copying in Helix Core means that only one physical copy of a file is stored on the server.
 	- Archive depots allow archiving old, infrequently accessed file revisions off to cheaper external storage.
+
+---
+### Official Helix Core/P4 Documentation:
+
+https://help.perforce.com/helix-core/quickstart/Content/quickstart/admin-create-depot.html
+https://help.perforce.com/helix-core/quickstart/Content/quickstart/admin-create-stream.html
