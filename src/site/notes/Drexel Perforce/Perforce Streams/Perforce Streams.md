@@ -51,3 +51,8 @@ While GIT is a powerful tool for many  development scenarios, Perforce + Streams
 - **Performance with Large Files**: Perforce excels in handling the large binary files common in game development, where GIT may struggle.
 - **Complex Workflow Management**: The structured approach of Streams is ideally suited for the intricate workflows typical in game development projects, providing clarity and organization not easily achieved with GIT.
 - **Scalability**: Perforce is designed to scale efficiently for large projects and teams, making it a preferred choice for major game development environments where managing vast amounts of data and coordinating among large teams are critical.
+
+---
+### Additional Information:
+https://www.perforce.com/blog/vcs/git-vs-perforce-how-choose-and-when-use-both
+https://www.perforce.com/resources/vcs/perforce-vs-competition
