@@ -167,3 +167,11 @@ For those interested in exploring beyond the P4V client, here are a few basic co
 - **Sync Workspace**: `p4 sync`
 
 These command-line operations are a glimpse into the power of Perforce from the terminal. They are particularly useful for advanced tasks or automation.
+
+---
+### Official Helix Core/P4 Documentation:
+
+https://help.perforce.com/helix-core/quickstart/Content/quickstart/end-user-reference.html
+
+Getting strated with Unity 3D: https://help.perforce.com/helix-core/quickstart-unity/Content/quickstart/game-home-quickstart.html
+Getting started with Unreal Engine: https://help.perforce.com/helix-core/quickstart-unreal/Content/quickstart/game-home-quickstart.html
