@@ -94,3 +94,6 @@ For additional guidance on filling depots, initiating projects, and mastering Pe
 
 
 ---
+### Official Helix Core/P4 Documentation:
+
+https://www.perforce.com/downloads
