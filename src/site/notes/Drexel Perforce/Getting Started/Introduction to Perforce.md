@@ -48,3 +48,9 @@ The typical workflow in Perforce involves:
 ---
 
 Perforce and its ecosystem, including Perforce Streams and the P4V client, offer a comprehensive solution for managing complex game development projects. By leveraging these tools, teams can enhance collaboration, streamline workflow, and ensure that every aspect of the project is versioned and integrated seamlessly.
+
+---
+### Official Helix Core/P4 Documentation:
+
+https://www.perforce.com/
+https://www.perforce.com/support/self-service-resources/documentation
