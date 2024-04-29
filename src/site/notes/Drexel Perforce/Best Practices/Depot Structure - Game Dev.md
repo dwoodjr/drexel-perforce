@@ -144,8 +144,6 @@ classDiagram
     Art --* Audio
     Art --* Props
     Art ..> Import_to_Dev: "Copies to"
-    
-    %%{init: {'themeVariables': { 'classText': 'font-style:italic; font-weight:bold;' }}}%%
 
 ```
 
