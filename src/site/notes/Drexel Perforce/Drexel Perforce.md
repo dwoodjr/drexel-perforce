@@ -52,7 +52,7 @@ Hands-on tutorials and real-world examples to guide you through common Perforce 
 
 Tips and tricks to use Perforce and Perforce Streams effectively and efficiently.
 
-- Depot Structure - Game Dev
+- [[Drexel Perforce/Best Practices/Depot Structure - Game Dev\|Depot Structure - Game Dev]]
 - Perforce Best Practices
 - Performance Optimization
 
