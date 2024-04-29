@@ -32,6 +32,7 @@ Dive deep into Perforce Streams, understand their structure, and discover how th
 
 - [[Drexel Perforce/Perforce Streams/Perforce Streams\|Perforce Streams]]
 - [[Drexel Perforce/Perforce Streams/Working with Streams\|Working with Streams]]
+- [[Drexel Perforce/Perforce Streams/Virtual Streams\|Virtual Streams]]
 - Advanced Streams Concepts
 
 ---
@@ -41,7 +42,6 @@ Dive deep into Perforce Streams, understand their structure, and discover how th
 Hands-on tutorials and real-world examples to guide you through common Perforce tasks and workflows.
 
 - [[Drexel Perforce/Tutorials and Examples/P4 Admin - Bulk Add\|P4 Admin - Bulk Add]]
-- [[Drexel Perforce/Tutorials and Examples/Virtual Streams\|Virtual Streams]]
 - Basic Perforce Commands
 - Branching and Merging with Streams
 - Resolving Conflicts
@@ -52,6 +52,7 @@ Hands-on tutorials and real-world examples to guide you through common Perforce 
 
 Tips and tricks to use Perforce and Perforce Streams effectively and efficiently.
 
+- Depot Structure - Game Dev
 - Perforce Best Practices
 - Performance Optimization
 
