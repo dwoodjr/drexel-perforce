@@ -187,7 +187,7 @@ classDiagram
 
 **Key Practices:**
 - **Avoid Individual Streams:** Do not create a new dev stream for each team member to prevent redundancy and confusion.
-- **Use of Virtual Streams:** Employ virtual streams for individual team members needing a tailored view of the project’s structure and files.
+- **Use of Virtual Streams:** Employ [[Drexel Perforce/Perforce Streams/Virtual Streams\|Virtual Streams]] for individual team members needing a tailored view of the project’s structure and files.
 ---
 ## P4Ignore File
 
