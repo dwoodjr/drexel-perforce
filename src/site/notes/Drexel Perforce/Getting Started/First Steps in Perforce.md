@@ -45,7 +45,7 @@ An essential part of working efficiently with Perforce is managing which files a
 
 - **Template Depots**: For courses and projects working from Template Depots, a `.p4ignore` file will be included, pre-populated with common patterns for Unity and Unreal projects.
 	- While the included p4ignore does cover many of the common tools and software packages used for Unity and Unreal development, it is not exhaustive. If a new tool not listed is used, be sure to update the file with the relevant ignore patterns as to not create merge problems and depot bloat.
-	- A link to the template p4ignore file: [.p4ignore](https://1drv.ms/u/s!AqQzGx8l4o2wk-Uwx2zueqzz8ZkPwA?e=MjDTut)
+	- A link to the template p4ignore file: [.p4ignore](https://1drv.ms/u/s!AqQzGx8l4o2wk-gXSJmBwQFm9lktzA?e=eKudgj)
 - **Manual Creation**:
   - In your workspace's root directory, create a `.p4ignore` file.
   - Open this file in any text editor and define the patterns for files to ignore. For example:
