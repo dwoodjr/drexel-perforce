@@ -42,8 +42,8 @@ Dive deep into Perforce Streams, understand their structure, and discover how th
 Hands-on tutorials and real-world examples to guide you through common Perforce tasks and workflows.
 
 - [[Drexel Perforce/Tutorials and Examples/P4 Admin - Bulk Add\|P4 Admin - Bulk Add]]
-- Basic Perforce Commands
-- Branching and Merging with Streams
+- [[Drexel Perforce/Tutorials and Examples/Basic Perforce Commands (Command Line)\|Basic Perforce Commands (Command Line)]]
+- [[Drexel Perforce/Tutorials and Examples/Branching, Merging, and Copying with Streams\|Branching, Merging, and Copying with Streams]]
 - Resolving Conflicts
 
 ---
