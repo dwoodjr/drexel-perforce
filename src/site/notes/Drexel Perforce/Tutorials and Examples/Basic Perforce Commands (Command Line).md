@@ -34,27 +34,27 @@ In Perforce, commands are executed through a command-line interface (CLI) like `
 
 ## Basic Commands for P4V Users
 
-For basic users, the focus is on daily tasks such as checking files in and out, viewing file histories, and managing personal workspaces.
+For most users, the focus is on daily tasks such as checking files in and out, viewing file histories, and managing personal workspaces.
 
-- **Check Out Files:**
+**Check Out Files:**
   ```
   p4 edit <file-path>
   ```
   Marks files for open as being edited.
 
-- **Submit Changes:**
+**Submit Changes:**
   ```
   p4 submit -d "description of changes"
   ```
   Submits changes to the depot.
 
-- **Get Latest Version:**
+**Get Latest Version:**
   ```
   p4 sync
   ```
   Synchronizes workspace with the latest files from the depot.
 
-- **View File History:**
+**View File History:**
   ```
   p4 filelog <file-path>
   ```
@@ -64,25 +64,25 @@ For basic users, the focus is on daily tasks such as checking files in and out, 
 
 Admins or super users need to manage user permissions, server configurations, and more complex depot operations.
 
-- **Create User:**
+**Create User:**
   ```
   p4 user -f <username>
   ```
   Force-creates a new user or edits an existing user configuration.
 
-- **Manage User Permissions:**
+**Manage User Permissions:**
   ```
   p4 protect
   ```
   Edits the protection table for controlling user access.
 
-- **Depot Management:**
+**Depot Management:**
   ```
   p4 depot _depotname_
   ```
   Displays or edits a depot.
 
-- **Server File Transfer Management:**
+**Server File Transfer Management:**
   ```
   p4 pull
   ```
