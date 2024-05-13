@@ -24,8 +24,11 @@ Virtual streams in Perforce allow you to create a filtered view of a real stream
 **C. Define the Paths:**
 
 - On the Advanced tab, specify the paths that define what to include or exclude in your virtual stream. Use:
-    - `exclude ...` to exclude everything by default.
-    - `share`, `isolate`, or `import` followed by specific paths to fine-tune what you want to include.
+    - `Share ...` : Paths included with shared are shared with the parent stream. Meaning merging/copying/branching/submitting are not allowed by default. This action takes place in the parent stream, but files added or deleted from a shared path automatically propagate to the parent.
+        - ``` share path/to/diredctory/... ```
+    - `exclude ...` to exclude everything by default. Always behaves as exclusion. Paths included here are excluded from view or actions.
+        - ```exclude paht/to/directory/...```
+    - `isolate` or `import` paths in a virtual stream, in most cases, essentially act as `share` does.
 
 ### Step 3: Finalizing Your Virtual Stream
 
