@@ -11,9 +11,7 @@ This section provides an introduction to basic Perforce commands, distinguishing
 In Perforce, commands are executed through a command-line interface (CLI) like `Terminal`. However, there are two versions of commands, those that connect with the Perforce Server/Depot directly (p4) and those that connect with the Perforce Visual Client (p4vc). Understanding the difference between these command types is crucial.
 
 - **`p4` Commands:** These are executed in the command-line environment and are ideal for scripting, automation, and flexibility.
-    
 - **`p4vc` Commands:** When these commands are executed, they affect the P4V GUI (Graphical User Interface).
-    
 
 ***This document focuses on `p4` command-line operations, providing a guide for both general users and administrators***
 
