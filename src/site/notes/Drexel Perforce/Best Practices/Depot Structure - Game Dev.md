@@ -86,20 +86,20 @@ classDiagram
         -Source Code Folder
         -Documentation Folder
     }
-    class Assets_D {
+    class Assets {
         -Audio
         -Models
     }
-    class Source_D {
+    class Source {
         -Scripts
         -Libraries
     }
-    class Docs_D {
+    class Docs {
         -Design Documents
     }
-    Development --* Assets_D
-    Development --* Source_D
-    Development --* Docs_D
+    Development --* Assets
+    Development --* Source
+    Development --* Docs
 
 ```
 
