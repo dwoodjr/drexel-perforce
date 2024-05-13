@@ -54,5 +54,6 @@ While GIT is a powerful tool for many  development scenarios, Perforce + Streams
 
 ---
 ### Additional Information:
+https://www.perforce.com/manuals/p4v/Content/P4V/chapter.streams.html
 https://www.perforce.com/blog/vcs/git-vs-perforce-how-choose-and-when-use-both
 https://www.perforce.com/resources/vcs/perforce-vs-competition
