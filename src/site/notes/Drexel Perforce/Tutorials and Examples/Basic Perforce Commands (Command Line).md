@@ -82,7 +82,7 @@ Admins or super users need to manage user permissions, server configurations, an
   ```
   Displays or edits a depot.
 
-- **Server Health Check:**
+- **Server File Transfer Management:**
   ```
   p4 pull
   ```
