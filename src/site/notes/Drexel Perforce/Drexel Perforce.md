@@ -33,6 +33,7 @@ Dive deep into Perforce Streams, understand their structure, and discover how th
 - [[Drexel Perforce/Perforce Streams/Perforce Streams\|Perforce Streams]]
 - [[Drexel Perforce/Perforce Streams/Working with Streams\|Working with Streams]]
 - [[Drexel Perforce/Perforce Streams/Virtual Streams\|Virtual Streams]]
+- [[Drexel Perforce/Tutorials and Examples/Branching, Merging, and Copying with Streams\|Branching, Merging, and Copying with Streams]]
 - Advanced Streams Concepts
 
 ---
@@ -43,7 +44,6 @@ Hands-on tutorials and real-world examples to guide you through common Perforce 
 
 - [[Drexel Perforce/Tutorials and Examples/P4 Admin - Bulk Add\|P4 Admin - Bulk Add]]
 - [[Drexel Perforce/Tutorials and Examples/Basic Perforce Commands (Command Line)\|Basic Perforce Commands (Command Line)]]
-- [[Drexel Perforce/Tutorials and Examples/Branching, Merging, and Copying with Streams\|Branching, Merging, and Copying with Streams]]
 - Resolving Conflicts
 
 ---
