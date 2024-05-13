@@ -33,7 +33,7 @@ Dive deep into Perforce Streams, understand their structure, and discover how th
 - [[Drexel Perforce/Perforce Streams/Perforce Streams\|Perforce Streams]]
 - [[Drexel Perforce/Perforce Streams/Working with Streams\|Working with Streams]]
 - [[Drexel Perforce/Perforce Streams/Virtual Streams\|Virtual Streams]]
-- [[Drexel Perforce/Tutorials and Examples/Branching, Merging, and Copying with Streams\|Branching, Merging, and Copying with Streams]]
+- [[Drexel Perforce/Perforce Streams/Branching, Merging, and Copying with Streams\|Branching, Merging, and Copying with Streams]]
 - Advanced Streams Concepts
 
 ---
