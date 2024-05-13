@@ -67,14 +67,14 @@ graph LR
 
 - **Clear Ownership**: Assign clear ownership of streams to team members. This clarifies responsibilities and helps prevent conflicts during merging and integration.
 - **Document Workflow**: Document your team's workflow and stream strategy. A clear, accessible guide ensures everyone understands how to work within your streams setup, promoting consistency and efficiency.
-
-``` mermaid 
+```mermaid 
 graph TD
     A[Clear Ownership] --> B[Assign Streams to Team Members]
     B --> C[Document Workflow]
     C --> D[Ensure Understanding]
     D --> E[Promote Consistency and Efficiency]
 ```
+
 
 ##### Handling Large Assets and Files
 
