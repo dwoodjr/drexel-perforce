@@ -2,6 +2,8 @@
 {"dg-publish":true,"permalink":"/drexel-perforce/drexel-perforce-updated/","contentClasses":"drexel","tags":["gardenEntry"]}
 ---
 
+
+---
 Welcome to the `Perforce Knowledge Hub`, a comprehensive resource designed for students and faculty learning about Perforce and Perforce Streams. 
 
 ---
@@ -11,7 +13,7 @@ Welcome to the `Perforce Knowledge Hub`, a comprehensive resource designed for s
 1. [[Drexel Perforce/Getting Started/Introduction to Perforce\|Introduction to Perforce]]
    - What is Perforce?
    - Why use Perforce for game development and virtual production?
-2. [[Drexel Perforce/Getting Started/Installation Guide - Legacy\|Installation Guide - Legacy]]
+2. [[Drexel Perforce/Getting Started/Installation Guide\|Installation Guide]]
    - Download and install P4V
    - Set up your workspace
 3. [[Drexel Perforce/Getting Started/First Steps in Perforce\|First Steps in Perforce]]
