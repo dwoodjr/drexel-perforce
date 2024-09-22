@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/drexel-perforce/drexel-perforce-updated/","contentClasses":"drexel","tags":["gardenEntry"]}
 ---
 
-Welcome to the **Perforce Streams Knowledge Hub**, a comprehensive resource designed for students and faculty learning about Perforce and Perforce Streams. 
+Welcome to the `Perforce Knowledge Hub`, a comprehensive resource designed for students and faculty learning about Perforce and Perforce Streams. 
 
 ---
 # Drexel Perforce - Knowledge Hub
