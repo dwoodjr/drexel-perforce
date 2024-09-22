@@ -7,8 +7,8 @@
 ## Table of Contents
 - [[Drexel Perforce/Getting Started/Installation Guide# Connecting to Drexel VPN\|# Connecting to Drexel VPN]]
 - [[Drexel Perforce/Getting Started/Installation Guide# P4V Client Installation\|# P4V Client Installation]]
-- [[Drexel Perforce/Getting Started/Installation Guide#Setting Up Perforce Streams\|#Setting Up Perforce Streams]]
-- [[Drexel Perforce/Getting Started/Installation Guide#Configuring Your Workspace\|#Configuring Your Workspace]]
+- [[Drexel Perforce/Getting Started/Installation Guide# Setting Up Perforce Streams\|# Setting Up Perforce Streams]]
+- [[Drexel Perforce/Getting Started/Installation Guide# Configuring Your Workspace\|# Configuring Your Workspace]]
 
 ---
 ## Connecting to Drexel VPN
@@ -77,7 +77,7 @@ Perforce Streams provide a structured way to manage branches in your projects, m
 ### 🔐 Step 1: Accessing P4V
 
 > [!IMPORTANT]
-> Ensure you're connected to the Drexel VPN before proceeding. If you haven't connected yet, refer to the [[Drexel Perforce/Getting Started/Installation Guide#Connecting to Drexel VPN\|#Connecting to Drexel VPN]] section above.
+> Ensure you're connected to the Drexel VPN before proceeding. If you haven't connected yet, refer to the [[Drexel Perforce/Getting Started/Installation Guide# Connecting to Drexel VPN\|# Connecting to Drexel VPN]] section above.
 
 1. Launch P4V from your applications or programs list
 2. Connect to the Perforce server:
