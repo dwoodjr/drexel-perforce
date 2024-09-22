@@ -11,7 +11,7 @@ Streams in Perforce are isolated lineages of source files, providing a structure
 "Branching" with streams is simply put, creating a new stream. Either `mainline`, `development`, `release`, or `virtual`, in scope. Branching in streams allows developers to diverge from the main line of development to work on features or fixes in parallel, without affecting the main codebase.
 
 ### Creating a Stream
-Steps for creating a new stream can be found in [[Drexel Perforce/Getting Started/Installation Guide\|Installation Guide]].
+Steps for creating a new stream can be found in [[Drexel Perforce/Getting Started/Installation Guide - Legacy\|Installation Guide - Legacy]].
 
 
 ## Merging with Streams
