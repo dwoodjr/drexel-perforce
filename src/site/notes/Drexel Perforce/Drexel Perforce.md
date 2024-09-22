@@ -21,7 +21,7 @@ Take a moment to help us help you, and to better gauge your understanding of Per
 Here you'll find everything you need to get started with Perforce, from installation to basic commands.
 
 - [[Drexel Perforce/Getting Started/Introduction to Perforce\|Introduction to Perforce]]
-- [[Drexel Perforce/Getting Started/Installation Guide\|Installation Guide]]
+- [[Drexel Perforce/Getting Started/Installation Guide - Legacy\|Installation Guide - Legacy]]
 - [[Drexel Perforce/Getting Started/First Steps in Perforce\|First Steps in Perforce]]
 
 ---
