@@ -5,8 +5,8 @@
 # 🚀 Perforce Installation Guide for Drexel University
 
 ## Table of Contents
-- [[Drexel Perforce/Getting Started/Installation Guide#Connecting to Drexel VPN\|#Connecting to Drexel VPN]]
-- [[Drexel Perforce/Getting Started/Installation Guide#P4V Client Installation\|#P4V Client Installation]]
+- [[Drexel Perforce/Getting Started/Installation Guide# Connecting to Drexel VPN\|# Connecting to Drexel VPN]]
+- [[Drexel Perforce/Getting Started/Installation Guide# P4V Client Installation\|# P4V Client Installation]]
 - [[Drexel Perforce/Getting Started/Installation Guide#Setting Up Perforce Streams\|#Setting Up Perforce Streams]]
 - [[Drexel Perforce/Getting Started/Installation Guide#Configuring Your Workspace\|#Configuring Your Workspace]]
 
