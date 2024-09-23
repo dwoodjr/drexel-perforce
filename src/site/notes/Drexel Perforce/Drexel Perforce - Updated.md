@@ -33,7 +33,7 @@ Welcome to the `Perforce Knowledge Hub`, a comprehensive resource designed for s
    - Merging strategies
    - Copying vs. merging
 
-## 🛠️ Advanced Topics
+## 💽: Advanced Topics
 1. [[Drexel Perforce/Perforce Streams/Virtual Streams\|Virtual Streams]]
 2. [[Performance Optimization\|Performance Optimization]]
 3. [[Resolving Conflicts\|Resolving Conflicts]]
@@ -47,6 +47,15 @@ Welcome to the `Perforce Knowledge Hub`, a comprehensive resource designed for s
 1. [[Perforce Best Practices\|Perforce Best Practices]]
 2. [[Common Pitfalls and How to Avoid Them\|Common Pitfalls and How to Avoid Them]]
 3. [[Collaborative Workflows\|Collaborative Workflows]]
+
+## 🛠️ Tools and Administration
+1. [[Command-Line Tools\|Command-Line Tools]]
+2. [[Administrative Tasks\|Administrative Tasks]]
+3. [[Drexel Perforce/Tutorials and Examples/Bulk Operations\|Bulk Operations]]
+   - P4 Admin - Bulk Add
+   - Bulk File Operations
+4. [[Troubleshooting and Logging\|Troubleshooting and Logging]]
+
 
 ## 🆘 Troubleshooting and Support
 1. [[FAQ\|FAQ]]
