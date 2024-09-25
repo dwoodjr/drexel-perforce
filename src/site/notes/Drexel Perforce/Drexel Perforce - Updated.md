@@ -6,7 +6,7 @@
 ![](https://i.imgur.com/wIFCX7S.png)
 
 ---
-Welcome to the `Perforce Knowledge Hub`, a comprehensive resource designed for students and faculty learning about Perforce and Perforce Streams. 
+Welcome to the `Westphal Perforce Knowledge Hub`, a comprehensive resource designed for students and faculty learning about Perforce and Perforce Streams. 
 
 ---
 # Drexel Perforce - Knowledge Hub
