@@ -24,7 +24,7 @@ Welcome to the `Perforce Knowledge Hub`, a comprehensive resource designed for s
    Basic commands and operations
 
 ## 🌊 Understanding Perforce Streams
-[[Perforce Streams Basics\|Perforce Streams Basics]]
+[[Drexel Perforce/Perforce Streams/Perforce Streams Basics\|Perforce Streams Basics]]
    What are Streams?
    Stream types and their uses
 [[Drexel Perforce/Perforce Streams/Working with Streams\|Working with Streams]]
