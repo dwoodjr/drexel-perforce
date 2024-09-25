@@ -4,6 +4,8 @@
 
 # 🚀 Perforce Installation Guide for Drexel University
 
+<iframe src="https://1drv.ms/v/s!AqQzGx8l4o2wk-sw3BWtIqtRbhePrw?embed=1" width="640" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+---
 ## Table of Contents
 - [[Drexel Perforce/Getting Started/Installation Guide# Connecting to Drexel VPN\|# Connecting to Drexel VPN]]
 - [[Drexel Perforce/Getting Started/Installation Guide# P4V Client Installation\|# P4V Client Installation]]
