@@ -2,7 +2,11 @@
 {"dg-publish":true,"permalink":"/drexel-perforce/getting-started/introduction-to-perforce/"}
 ---
 
+<iframe src="https://1drv.ms/v/s!AqQzGx8l4o2wk-sx5PcRjhzcrC2cgQ?embed=1" width="640" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+---
 Welcome to the world of Perforce, also known as Helix Core, a powerful version control system (VCS) that enables teams to work collaboratively on large-scale projects. This introduction aims to provide you with a high-level understanding of Perforce, its importance in the realm of project development, and how it facilitates a streamlined workflow through the use of Perforce Streams and the P4V client.
+- [Perforce Helix Core](https://www.perforce.com/products/helix-core)
+- [Why Crytek Relies on Helix Core](https://www.perforce.com/customers/case-studies/vcs/crytek)
 
 ---
 #### Why Use a Version Control System?
