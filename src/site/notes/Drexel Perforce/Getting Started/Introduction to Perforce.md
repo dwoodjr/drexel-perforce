@@ -2,7 +2,24 @@
 {"dg-publish":true,"permalink":"/drexel-perforce/getting-started/introduction-to-perforce/"}
 ---
 
+```mermaid
+stateDiagram-v2
+    [*] --> Still
+    Still --> [*]
+
+    Still --> Moving
+    Moving --> Still
+    Moving --> Crash
+    Crash --> [*]
+```
+
 <iframe src="https://1drv.ms/v/s!AqQzGx8l4o2wk-sx5PcRjhzcrC2cgQ?embed=1" width="640" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+
+---
+
+## Official Perforce Video: *Perforce Helix Core Beginner’s Guide: Version Control Basic Concepts*
+
+<iframe width="640" height="315" src="https://www.youtube.com/embed/jIQEjDiSe0g?si=5RTLpqARFoOdq7fb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ---
 
@@ -59,4 +76,6 @@ Perforce and its ecosystem, including Perforce Streams and the P4V client, offer
 ### Official Helix Core/P4 Documentation:
 
 https://www.perforce.com/
-https://www.perforce.com/support/self-service-resources/documentation
+https://www.perforce.com/support/self-service-resources/documentation```mermaid
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jIQEjDiSe0g?si=5RTLpqARFoOdq7fb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
