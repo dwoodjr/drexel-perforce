@@ -2,16 +2,6 @@
 {"dg-publish":true,"permalink":"/drexel-perforce/getting-started/introduction-to-perforce/"}
 ---
 
-```mermaid
-stateDiagram-v2
-    [*] --> Still
-    Still --> [*]
-
-    Still --> Moving
-    Moving --> Still
-    Moving --> Crash
-    Crash --> [*]
-```
 
 <iframe src="https://1drv.ms/v/s!AqQzGx8l4o2wk-sx5PcRjhzcrC2cgQ?embed=1" width="640" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
 
