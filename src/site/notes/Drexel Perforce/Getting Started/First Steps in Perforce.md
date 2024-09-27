@@ -12,7 +12,7 @@ Welcome to your journey with Perforce! This guide will walk you through the esse
 
 ## 📋 Table of Contents
 
-1. Creating a Workspace
+1. [Creating a Workspace](#creating-your-workspace)
 2. [Managing .p4ignore Files](#managing-p4ignore-files)
 3. [Navigating Your Workspace](#navigating-your-workspace)
 4. [Editing Files](#editing-files)
