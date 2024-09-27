@@ -3,6 +3,12 @@
 ---
 
 
+---
+Official Perforce Video: *Perforce Streams: Everything You Need to Know*
+
+<iframe width="640" height="315" src="https://www.youtube.com/embed/qB6mpOy8ZUs?si=9XNldmdVbW5dYc0V" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
 Perforce Streams offer a robust and structured approach to branching in version control, tailored to the unique demands of development, including game development and virtual production. 
 
 This section will explore the fundamentals of Perforce Streams, their benefits, and how they compare to traditional branching strategies, providing insights into their practical applications in complex project environments.
