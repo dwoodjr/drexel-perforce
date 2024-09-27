@@ -8,6 +8,10 @@
 ---
 Welcome to the `Westphal Perforce Knowledge Hub`, a comprehensive resource designed for students and faculty learning about Perforce and Perforce Streams. 
 
+
+> :LiTicket: [!important] Discord Ticket System
+> Here is a link to our [Discord Perforce Ticket System](https://discord.com/channels/433681562228490243/1191809248984838165) when a help ticket is needed. 
+
 ---
 # Drexel Perforce - Knowledge Hub
 
