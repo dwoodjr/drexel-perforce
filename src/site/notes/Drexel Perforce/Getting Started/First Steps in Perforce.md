@@ -12,13 +12,67 @@ Welcome to your journey with Perforce! This guide will walk you through the esse
 
 ## 📋 Table of Contents
 
-1. [Managing .p4ignore Files](#managing-p4ignore-files)
-2. [Navigating Your Workspace](#navigating-your-workspace)
-3. [Editing Files](#editing-files)
-4. [Adding Files](#adding-files)
-5. [Deleting Files](#deleting-files)
-6. [Working with Streams](#working-with-streams)
-7. [Best Practices](#best-practices)
+1. Creating a Workspace
+2. [Managing .p4ignore Files](#managing-p4ignore-files)
+3. [Navigating Your Workspace](#navigating-your-workspace)
+4. [Editing Files](#editing-files)
+5. [Adding Files](#adding-files)
+6. [Deleting Files](#deleting-files)
+7. [Working with Streams](#working-with-streams)
+8. [Best Practices](#best-practices)
+---
+---
+
+Official Perforce Video: *Perforce Helix Core Beginner’s Guide: How to Create a Workspace*
+
+<iframe width="640" height="315" src="https://www.youtube.com/embed/R2vlwsoug4Y?si=nYo1lq4jYl9o-4yP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## 🏗️ Creating Your Workspace
+
+Before you can start working with files, you need to set up your workspace. A workspace is your personal working area where you interact with files from the Perforce server.
+
+### Steps to Create a Workspace:
+
+1. **Open P4V**: Launch the Perforce Visual Client
+
+2. **Connect to the Server**: 
+   - If not already connected, go to `Connection > Connect to Server`
+   - Enter your server address, username, and password
+
+3. **Create a New Workspace**:
+   - Go to `Connection > New Workspace`
+   - Or use the shortcut (when inside the Workspaces context window): `Ctrl + N` (Windows) or `Cmd + N` (macOS)
+
+1. **Configure Workspace Settings**:
+   - **Name**: Enter a unique name for your workspace (e.g., "Username_ProjectName_Machine")
+      - It is recommended to begin all workspaces with your `abc123` username
+   - **Root**: Choose a local directory for your workspace files
+   - **Stream**: Select the appropriate stream for your project (e.g., "//depot/main")
+   - **Description**: Add a brief description of your workspace's purpose
+
+5. **Set Workspace View**:
+   - This defines which parts of the depot you want in your workspace
+   - *For most users, the default view based on the selected stream is sufficient*
+
+1. **Advanced Options**:
+   - Configure options like line-ending settings or submit options as needed
+      - Tick on `Modtime` under Advanced tab
+      - Tick on `Rmdir` under Advanced tab
+
+7. **Create Workspace**: 
+   - Click 'OK' to create your workspace
+
+8. **Initial Sync**:
+   - After creating the workspace, you'll be prompted to sync files
+   - This downloads the current versions of files to your local workspace
+
+> [!tip] Workspace Naming Convention
+> Follow your team's naming convention for workspaces. A common format is "UserName_MachineName_ProjectName".
+
+![Creating a Workspace](https://i.postimg.cc/example-workspace-creation.gif)
+
+> [!note] 
+> The specific options and appearance may vary slightly depending on your Perforce server configuration and P4V version.
 
 ---
 
@@ -32,6 +86,15 @@ Welcome to your journey with Perforce! This guide will walk you through the esse
 1. **Enable .p4ignore Support**:
    - Open Command Prompt as administrator
    - Type `setx P4IGNORE .p4ignore` and press Enter
+
+	- **Alternative Method: Edit System Environment Variables**:
+	  - Search your computer for an option to 'Edit the system environment variables'
+	  - Under 'System variables', click 'New'
+	  - For 'Variable name', enter `P4IGNORE`
+	  - For 'Variable value', enter `.p4ignore`
+	  - Click 'OK' on all windows to save the changes
+	  - Restart any open command prompts or applications for the change to take effect
+
 
 2. **Create a .p4ignore File**:
    - In your workspace root, create a file named `.p4ignore`
@@ -48,8 +111,8 @@ build/
 temp/**
 ```
 
-> [!tip] Pro Tip
-> For Unity or Unreal projects, check if a template `.p4ignore` file is provided in your depot. It's a great starting point!
+> [!tip] Pro Tip - .p4ignore File
+> For Unity or Unreal projects, check if a template `.p4ignore` file is provided in your depot. It's a great starting point! If not, we provide a default [Universal .p4ignore](https://1drv.ms/u/s!AqQzGx8l4o2wk-gX4KcMQCz_Dz8SjA?e=fZIpeN) file that can be used for most game design and virtual production projects.
 
 ---
 
@@ -65,6 +128,12 @@ Your workspace is your local copy of files from the server. Here's how to naviga
 
    ![Workspace Tree](https://i.postimg.cc/k43L3FzN/p4v-workspace-Tree-tab.gif)
 
+---
+Official Perforce Video: *Perforce Helix Core Beginner’s Guide: Submitting, Syncing, and Managing File Changes*
+
+<iframe width="640" height="315" src="https://www.youtube.com/embed/b0oe8UYdm7s?si=LIdTD77wofostoIM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
 ### 🔄 Syncing to the Latest Version
 
 - Right-click your workspace and choose **Get Latest Revision**
@@ -110,7 +179,11 @@ Your workspace is your local copy of files from the server. Here's how to naviga
    ![Adding Files](https://i.postimg.cc/HL7FhPZs/p4v-add.gif)
 
 ---
+Official Perforce Video: *Perforce Helix Core Beginner’s Guide: Undoing Changes and Fixing Deleted Files*
 
+<iframe width="640" height="315" src="https://www.youtube.com/embed/JQAdYnZCv_g?si=WJxLYyMbI_asJtXJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
 ## 🗑 Deleting Files
 
 > [!caution] Important
@@ -167,3 +240,4 @@ Streams are purpose-defined branches that make managing changes easier.
 
 > [!note] Want to Learn More?
 > Check out the [Official Helix Core Documentation](https://help.perforce.com/helix-core/quickstart/Content/quickstart/end-user-reference.html) for in-depth information and advanced techniques!
+> Visit the [Perforce YouTube Channel](https://www.youtube.com/@PerforceSoftware) for video tutorials and references!
