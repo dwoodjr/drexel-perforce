@@ -9,11 +9,11 @@
 Welcome to the `Westphal Perforce Knowledge Hub`, a comprehensive resource designed for students and faculty learning about Perforce and Perforce Streams. 
 
 
-> :LiTicket: [!important] `Discord Ticket System`
+> 🎫: [!important] `Discord Ticket System`
 > Here is a link to our [Discord Perforce Ticket System](https://discord.com/channels/433681562228490243/1191809248984838165) when a help ticket is needed. 
 
 
-> :LiLink: [!important] Westphal `Universal .p4ignore`
+> 🖇: [!important] Westphal `Universal .p4ignore`
 > Here is a link to a download for a ["Universal" .p4Ignore](https://1drv.ms/u/s!AqQzGx8l4o2wk-gX4KcMQCz_Dz8SjA)file that can be used as a staring point for most game and virtual production projects.
 
 ---
