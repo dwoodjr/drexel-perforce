@@ -87,6 +87,8 @@ Perforce Streams provide a structured way to manage branches in your projects, m
 2. Connect to the Perforce server:
    - Enter the server address: `perforce.westphal.drexel.edu:1666`
    - Log in with your provided credentials (username and password)
+      - Username is your Drexel username: `abc123`
+      - Default passwords for new users are either `ChangeMe123!` or `TempPass123!`
 
 ![perforce_server_port.png](/img/user/Drexel%20Perforce/All%20Media/perforce_server_port.png)
 
