@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/drexel-perforce/perforce-streams/virtual-streams/"}
+{"dg-publish":true,"permalink":"/drexel-perforce/perforce-streams/virtual-streams/","noteIcon":""}
 ---
 
 ### Step 1: Understanding Virtual Streams
