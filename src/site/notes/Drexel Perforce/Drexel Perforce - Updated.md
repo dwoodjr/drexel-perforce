@@ -4,7 +4,7 @@
 
 # Drexel Perforce - Knowledge Hub
 
-<img src="https://1drv.ms/i/s!AqQzGx8l4o2wk-tuipvLSr0gj1W78Q?embed=1&width=1024&height=550" width="1024" height="550" />
+<img src="https://1drv.ms/i/s!AqQzGx8l4o2wk-tuipvLSr0gj1W78Q?embed=1&width=1024&height=550" width="512" height="275" />
 
 ---
 Welcome to the `Westphal Perforce Knowledge Hub`, a comprehensive resource designed for students and faculty learning about Perforce and Perforce Streams. 
