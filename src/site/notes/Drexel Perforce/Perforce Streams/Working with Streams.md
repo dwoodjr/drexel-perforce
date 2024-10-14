@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/drexel-perforce/perforce-streams/working-with-streams/"}
+{"dg-publish":true,"permalink":"/drexel-perforce/perforce-streams/working-with-streams/","noteIcon":""}
 ---
 
 
