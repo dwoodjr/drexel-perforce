@@ -45,7 +45,6 @@ Welcome to the `Westphal Perforce Knowledge Hub`, a comprehensive resource desig
 
 ## 💽: Advanced Topics
 [[Drexel Perforce/Perforce Streams/Virtual Streams\|Virtual Streams]]
-[[Performance Optimization\|Performance Optimization]]
 [[Resolving Conflicts\|Resolving Conflicts]]
 
 ## 🎮 Game Development Specifics
@@ -79,5 +78,5 @@ Welcome to the `Westphal Perforce Knowledge Hub`, a comprehensive resource desig
 [[Glossary of Perforce Terms\|Glossary of Perforce Terms]]
 
 ## 📊 Surveys and Assessments
-- [[Drexel Perforce/Surveys and Assessments/New User Survey\|New User Survey]]
-- [[Drexel Perforce/Surveys and Assessments/Experienced User Assessment\|Experienced User Assessment]]
+[[Drexel Perforce/Surveys and Assessments/New User Survey\|New User Survey]]
+[[Drexel Perforce/Surveys and Assessments/Experienced User Assessment\|Experienced User Assessment]]
