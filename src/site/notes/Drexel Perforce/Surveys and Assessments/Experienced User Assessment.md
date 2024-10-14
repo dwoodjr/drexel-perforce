@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/drexel-perforce/surveys-and-assessments/experienced-user-assessment/"}
+{"dg-publish":true,"permalink":"/drexel-perforce/surveys-and-assessments/experienced-user-assessment/","noteIcon":""}
 ---
 
 # [Experienced Use Assessment - Microsoft Forms](https://forms.office.com/r/cx71Seum6V)
