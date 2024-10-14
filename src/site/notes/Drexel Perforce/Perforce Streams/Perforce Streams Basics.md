@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/drexel-perforce/perforce-streams/perforce-streams-basics/"}
+{"dg-publish":true,"permalink":"/drexel-perforce/perforce-streams/perforce-streams-basics/","noteIcon":""}
 ---
 
 
