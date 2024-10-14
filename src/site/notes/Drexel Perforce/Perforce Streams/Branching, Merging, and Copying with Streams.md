@@ -1,7 +1,15 @@
 ---
-{"dg-publish":true,"permalink":"/drexel-perforce/perforce-streams/branching-merging-and-copying-with-streams/"}
+{"dg-publish":true,"permalink":"/drexel-perforce/perforce-streams/branching-merging-and-copying-with-streams/","noteIcon":""}
 ---
 
+Official Perforce Video: *Perforce Streams Quickstart*
+<iframe width="640" height="315" src="https://www.youtube.com/embed/ggty1lkL1gA?si=QAgBjoW-RUAvvvbr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+Official Perforce Video: *Incorporate Code from One Feature Stream to Another*
+<iframe width="640" height="315" src="https://www.youtube.com/embed/xZi1Rxyk2hk?si=L8oog-FUHHOzNwPc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
 ## Overview
 
 Streams in Perforce are isolated lineages of source files, providing a structured way to manage changes across different scopes of work like features, releases, or bug fixes. This page outlines the key concepts and operations for branching, merging (down), and copying (up) with streams and virtual streams.
@@ -13,6 +21,11 @@ Streams in Perforce are isolated lineages of source files, providing a structure
 ### Creating a Stream
 Steps for creating a new stream can be found in [[Drexel Perforce/Getting Started/Installation Guide\|Installation Guide]].
 
+### Switching Streams 
+It is important to note that to properly merge or copy from one stream to another, the stream that is doing the merging or copying must be the **active** stream. It is good to get a handle of switching streams.
+
+Official Perforce Video: *Switching Streams Workspaces*
+<iframe width="640" height="315" src="https://www.youtube.com/embed/LrFnJt3KJ3s?si=hZfNWTxQ6RdDJBsZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Merging with Streams
 
