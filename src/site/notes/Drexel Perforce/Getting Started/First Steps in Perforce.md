@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/drexel-perforce/getting-started/first-steps-in-perforce/"}
+{"dg-publish":true,"permalink":"/drexel-perforce/getting-started/first-steps-in-perforce/","noteIcon":""}
 ---
 
 <iframe src="https://1drv.ms/v/s!AqQzGx8l4o2wk-syAmTvlqQr5q2YpA?embed=1" width="640" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
@@ -69,7 +69,7 @@ Before you can start working with files, you need to set up your workspace. A wo
 > [!tip] Workspace Naming Convention
 > Follow your team's naming convention for workspaces. A common format is "UserName_MachineName_ProjectName".
 
-![Creating a Workspace](https://i.postimg.cc/example-workspace-creation.gif)
+
 
 > [!note] 
 > The specific options and appearance may vary slightly depending on your Perforce server configuration and P4V version.
