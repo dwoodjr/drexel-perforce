@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/drexel-perforce/surveys-and-assessments/new-user-survey/"}
+{"dg-publish":true,"permalink":"/drexel-perforce/surveys-and-assessments/new-user-survey/","noteIcon":""}
 ---
 
 

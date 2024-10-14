@@ -1,8 +1,21 @@
 ---
-{"dg-publish":true,"permalink":"/drexel-perforce/getting-started/introduction-to-perforce/"}
+{"dg-publish":true,"permalink":"/drexel-perforce/getting-started/introduction-to-perforce/","noteIcon":""}
+---
+
+
+<iframe src="https://1drv.ms/v/s!AqQzGx8l4o2wk-sx5PcRjhzcrC2cgQ?embed=1" width="640" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+
+---
+
+## Official Perforce Video: *Perforce Helix Core Beginner’s Guide: Version Control Basic Concepts*
+
+<iframe width="640" height="315" src="https://www.youtube.com/embed/jIQEjDiSe0g?si=5RTLpqARFoOdq7fb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ---
 
 Welcome to the world of Perforce, also known as Helix Core, a powerful version control system (VCS) that enables teams to work collaboratively on large-scale projects. This introduction aims to provide you with a high-level understanding of Perforce, its importance in the realm of project development, and how it facilitates a streamlined workflow through the use of Perforce Streams and the P4V client.
+- [Perforce Helix Core](https://www.perforce.com/products/helix-core)
+- [Why Crytek Relies on Helix Core](https://www.perforce.com/customers/case-studies/vcs/crytek)
 
 ---
 #### Why Use a Version Control System?
@@ -48,3 +61,11 @@ The typical workflow in Perforce involves:
 ---
 
 Perforce and its ecosystem, including Perforce Streams and the P4V client, offer a comprehensive solution for managing complex game development projects. By leveraging these tools, teams can enhance collaboration, streamline workflow, and ensure that every aspect of the project is versioned and integrated seamlessly.
+
+---
+### Official Helix Core/P4 Documentation:
+
+https://www.perforce.com/
+https://www.perforce.com/support/self-service-resources/documentation```mermaid
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jIQEjDiSe0g?si=5RTLpqARFoOdq7fb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

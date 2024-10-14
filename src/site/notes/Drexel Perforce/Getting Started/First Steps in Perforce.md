@@ -1,169 +1,243 @@
 ---
-{"dg-publish":true,"permalink":"/drexel-perforce/getting-started/first-steps-in-perforce/"}
+{"dg-publish":true,"permalink":"/drexel-perforce/getting-started/first-steps-in-perforce/","noteIcon":""}
 ---
 
-Now that your workspace and streams are set up, let's delve into some practical tasks within the P4V client. This guide focuses on exploring your workspace and streams through common and useful tasks in P4V, helping you become proficient in managing and navigating your projects. While command-line operations offer additional power for advanced users, most day-to-day tasks can be efficiently handled through the P4V client.
-## Order of Operations
-1. **Managing `.p4ignore` Files**
-2. **Navigating Your Workspace**
-3. **Editing Files**
-4. **Adding Files**
-5. **Working with Streams**
+<iframe src="https://1drv.ms/v/s!AqQzGx8l4o2wk-syAmTvlqQr5q2YpA?embed=1" width="640" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
 
 ---
-### Managing .ignore Files in Perforce
 
-An essential part of working efficiently with Perforce is managing which files and directories are versioned and which are ignored. This is particularly important in game development projects where build directories, temporary files, or third-party libraries should not be submitted to the Perforce server. Perforce uses `.p4ignore` files to specify patterns for files and directories to ignore. Let's go through setting up and using `.p4ignore` files in your project.
+# 🚀 First Steps in Perforce: A Beginner's Guide
 
-#### Setting Up `.p4ignore` Support
+Welcome to your journey with Perforce! This guide will walk you through the essential tasks you'll perform using the P4V client. *Let's dive in!*
 
-##### Enable `.p4ignore` Support
-- **Perforce Environment Setup**: To use `.p4ignore`, you must first enable support by setting the `P4IGNORE` environment variable to `.p4ignore`.
+## 📋 Table of Contents
 
-    - **Windows**:
-      - Open the Command Prompt.
-      - Type `setx P4IGNORE .p4ignore` and press Enter.
-      - **System GUI**:
-        - Right-click `This PC` > `Properties` > `Advanced system settings`.
-        - Under `System Properties`, click `Environment Variables`.
-        - Click `New` under `User variables` or `System variables`.
-        - Set `Variable name` to `P4IGNORE` and `Variable value` to `.p4ignore`.
-        - Click `OK` to save.
-        
-    - **macOS/Linux**:
-      - Open the Terminal.
-      - Add `export P4IGNORE=.p4ignore` to your `.bashrc`, `.zshrc`, or equivalent.
-      - **macOS System GUI**:
-        - Go to `System Preferences` > `Users & Groups`.
-        - Select your user and click `Login Items`.
-        - Click the `+` button and navigate to your shell profile script to add it (additional steps may be required for direct environment variable setup via GUI).
+1. [Creating a Workspace](#creating-your-workspace)
+2. [Managing .p4ignore Files](#managing-p4ignore-files)
+3. [Navigating Your Workspace](#navigating-your-workspace)
+4. [Editing Files](#editing-files)
+5. [Adding Files](#adding-files)
+6. [Deleting Files](#deleting-files)
+7. [Working with Streams](#working-with-streams)
+8. [Best Practices](#best-practices)
+---
+---
 
-*A Restart your machine may be required to activate the changes.*
+Official Perforce Video: *Perforce Helix Core Beginner’s Guide: How to Create a Workspace*
+
+<iframe width="640" height="315" src="https://www.youtube.com/embed/R2vlwsoug4Y?si=nYo1lq4jYl9o-4yP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## 🏗️ Creating Your Workspace
+
+Before you can start working with files, you need to set up your workspace. A workspace is your personal working area where you interact with files from the Perforce server.
+
+### Steps to Create a Workspace:
+
+1. **Open P4V**: Launch the Perforce Visual Client
+
+2. **Connect to the Server**: 
+   - If not already connected, go to `Connection > Connect to Server`
+   - Enter your server address, username, and password
+
+3. **Create a New Workspace**:
+   - Go to `Connection > New Workspace`
+   - Or use the shortcut (when inside the Workspaces context window): `Ctrl + N` (Windows) or `Cmd + N` (macOS)
+
+1. **Configure Workspace Settings**:
+   - **Name**: Enter a unique name for your workspace (e.g., "Username_ProjectName_Machine")
+      - It is recommended to begin all workspaces with your `abc123` username
+   - **Root**: Choose a local directory for your workspace files
+   - **Stream**: Select the appropriate stream for your project (e.g., "//depot/main")
+   - **Description**: Add a brief description of your workspace's purpose
+
+5. **Set Workspace View**:
+   - This defines which parts of the depot you want in your workspace
+   - *For most users, the default view based on the selected stream is sufficient*
+
+1. **Advanced Options**:
+   - Configure options like line-ending settings or submit options as needed
+      - Tick on `Modtime` under Advanced tab
+      - Tick on `Rmdir` under Advanced tab
+
+7. **Create Workspace**: 
+   - Click 'OK' to create your workspace
+
+8. **Initial Sync**:
+   - After creating the workspace, you'll be prompted to sync files
+   - This downloads the current versions of files to your local workspace
+
+> [!tip] Workspace Naming Convention
+> Follow your team's naming convention for workspaces. A common format is "UserName_MachineName_ProjectName".
+
+
+
+> [!note] 
+> The specific options and appearance may vary slightly depending on your Perforce server configuration and P4V version.
 
 ---
-#### Creating a `.p4ignore` File
 
-- **Template Depots**: For courses and projects working from Template Depots, a `.p4ignore` file will be included, pre-populated with common patterns for Unity and Unreal projects.
-	- While the included p4ignore does cover many of the common tools and software packages used for Unity and Unreal development, it is not exhaustive. If a new tool not listed is used, be sure to update the file with the relevant ignore patterns as to not create merge problems and depot bloat.
-	- A link to the template p4ignore file: [.p4ignore](https://1drv.ms/u/s!AqQzGx8l4o2wk-Uwx2zueqzz8ZkPwA?e=MjDTut)
-- **Manual Creation**:
-  - In your workspace's root directory, create a `.p4ignore` file.
-  - Open this file in any text editor and define the patterns for files to ignore. For example:
-``` plaintext
-# Ignore all temporary files - Often generated by editors or operating systems
+## 🛠 Managing .p4ignore Files
+
+> [!important] Why Use .p4ignore?
+> `.p4ignore` files help manage which files are versioned in your project. This is crucial for game development, where you often have build directories, temporary files, or third-party libraries that shouldn't be in version control.
+
+### Setting Up .p4ignore Support
+
+1. **Enable .p4ignore Support**:
+   - Open Command Prompt as administrator
+   - Type `setx P4IGNORE .p4ignore` and press Enter
+
+	- **Alternative Method: Edit System Environment Variables**:
+	  - Search your computer for an option to 'Edit the system environment variables'
+	  - Under 'System variables', click 'New'
+	  - For 'Variable name', enter `P4IGNORE`
+	  - For 'Variable value', enter `.p4ignore`
+	  - Click 'OK' on all windows to save the changes
+	  - Restart any open command prompts or applications for the change to take effect
+
+
+2. **Create a .p4ignore File**:
+   - In your workspace root, create a file named `.p4ignore`
+   - Add patterns for files to ignore, for example:
+
+```plaintext
+# Ignore temporary files
 *.tmp
 
-# Ignore the 'build' directory - Contains compiled code and build artifacts
-# that should not be version-controlled as they are generated from source
+# Ignore build directory
 build/
 
-# Ignore all files in 'temp' directories - Used for temporary storage by applications
-# or for intermediate files during building or compiling
+# Ignore all files in temp directories
 temp/**
 ```
 
-
-#### Applying `.p4ignore` Patterns
-
-- With `.p4ignore` set, P4V and Perforce command line tools will ignore files matching these patterns when adding new files to version control.
-- This file can be edited with any IDE or text editor to fit a project's specifics.
-- Further documentation on creating and managing `.p4ignore` files can be found here: [Helix Core Command-Line (P4) Reference (2023.2)⁤ (perforce.com)](https://www.perforce.com/manuals/cmdref/Content/CmdRef/P4IGNORE.html)
-
----
-### Best Practices for .p4ignore Files
-
-- **Commit .p4ignore**: While the `.p4ignore` file itself should be personal and not always shared across the team (as different developers might have different environments), it's often useful to have a team-standard `.p4ignore` file that's committed to the repository. This ensures consistent ignore rules across all team members' environments.
-- **Specificity**: Be as specific as possible with your ignore patterns to avoid accidentally ignoring important files.
-- **Regular Updates**: As your project evolves, regularly review and update your `.p4ignore` file to match new tools, directories, and file types that should be ignored.
----
-### Navigating Your Workspace
-
-Your workspace serves as a personal local copy of files from the server, customized for your individual tasks. Below are steps to efficiently navigate and manage your workspace in P4V:
-#### Viewing Your Files
-- Navigate to the ***Workspace Tree*** tab in P4V to view the files and folders within your local workspace. This allows you to explore the current structure and content you're working with.
-	- This view can be accessed through the menu by navigating to `View > Workspace Tree` or by using the shortcut `Ctrl + 0` (Windows/Linux) or `Cmd + 0` (macOS).
-	-  <img src = "https://i.postimg.cc/k43L3FzN/p4v-workspace-Tree-tab.gif">
-- **Files** can also be found under the Files tab, assuming the correct workspace is configured and the file directory has been selected in the Workspace Tree.
-	- This view can be accessed through the menu by navigating to `View > Files in Folder`.
-#### Syncing to the Latest Version
-- To ensure your work is based on the most recent file versions, right-click in your workspace and choose ***Get Latest Revision***. Or select the workspace and hit the Get Latest button. This action synchronizes your workspace with the server's latest revisions.
--  Optionally you can use the shortcut `Ctrl + Shift + G` (Windows/Linux) or `Cmd + Shift + G` (macOS).
-	- <img src = "https://i.postimg.cc/QdzRSrqy/p4v-get-Latest.gif">
-#### Checking Out Files
-- To modify any file, *it must be checked out first*. Right-click the desired file (or entire folder) in the ***Workspace Tree*** or ***Files*** tabs and select ***Check Out***. This action locks the file for editing, signaling to your team that you are making changes.
-	- Optionally you can use the shortcut `Ctrl + E` (Windows/Linux) or `Cmd + E` (macOS).
-	- <img src ="https://i.postimg.cc/j5HmsnYp/p4v-check-Out.gif">
-#### Submitting Changes
-- When files are *checked out* and opened for editing they will end up in ***Pending*** tab. This tab shows the current pending "changelist" ready to be submitted to the depot.
-- This view can be accessed through the menu by navigating to `View > Pending Changelists` or by using the shortcut `Ctrl + 1` (Windows/Linux) or `Cmd + 1` (macOS).
-	- <img src="https://i.postimg.cc/sx381fVv/p4v-pending-Changelist.gif">
-
-- Upon completing your edits, select the modified file(s) and select ***Submit.*** A dialog will prompt you to describe your changes. Completing this step commits your changes to the server, sharing them with your team. 
-	- Optionally you can use the shortcut `Ctrl + S` (Windows/Linux) or `Cmd + S` (macOS).
-- Ensure you provide a detailed and informative description in the changelist dialog to clearly communicate the nature and purpose of your changes.
-	- <img src="https://i.postimg.cc/SRVP90sV/p4v-submit.gif">
-
----
-### Editing Files
-Editing involves checking out a file, making your changes, and then submitting those changes back to Perforce.
-
-- **Check Out**: Right-click the file and select 'Check Out'.
-- **Edit**: Make your changes using your preferred editor.
-- **Submit**: Right-click the edited file and select 'Submit' to commit your changes, with a descriptive message of what was modified.
-
----
-### Adding Files
-Adding files to Perforce is a straightforward process, whether you're populating a new workspace for the first time or adding new assets to an ongoing project.
-
-- **Create or Place Files**: In your local workspace directory, create new files or place existing ones that you wish to add to version control.
-- **Add Files to Perforce**: In P4V, navigate to the root of your workspace or the directory where you have added files. Right-click and select ***Mark for Add***. Or, choose the individual files you wish to add, then click ***Add***.
-- <img src="https://i.postimg.cc/HL7FhPZs/p4v-add.gif">
-- **Submit Changes**: After adding, a changelist will be created. Right-click this changelist and select 'Submit' to finalize adding your files to the depot.
-
-#### For First-Time Setup in an Empty Depot
-If opening your workspace for the first time and your depot is empty, you'll need to add files to begin version control.
+> [!tip] Pro Tip - .p4ignore File
+> For Unity or Unreal projects, check if a template `.p4ignore` file is provided in your depot. It's a great starting point! If not, we provide a default [Universal .p4ignore](https://1drv.ms/u/s!AqQzGx8l4o2wk-gX4KcMQCz_Dz8SjA?e=fZIpeN) file that can be used for most game design and virtual production projects.
 
 ---
 
-### P4V Workflow - Best Practices
+## 🗺 Navigating Your Workspace
 
-1. **Get Latest Version**: Before you start, sync your workspace to get the latest files from the server to avoid conflicts.
-2. **Check Out Files**: Indicate you're working on files by checking them out, which alerts your team to avoid overlapping work. Only checkout the necessary files whenever possible, try to avoid checking out entire folders.
-3. **Edit**: Make your changes using your preferred tools.
-4. **Review Changes**: Before submitting, review your changes for errors or unnecessary modifications. It is a good idea to right-click the changelist and select ***Revert  If Unchanged***.
-5. **Resolve Conflicts**: If there are any conflicts with the server version, resolve them to ensure smooth integration.
-6. **Test Locally**: Verify your changes don't introduce new issues by running tests or manual checks.
-7. **Submit Changes**: Commit your work to the server with a detailed description for your team. Always commit all files before you stop working, this will ensure they are not locked for other team members.
-8. **Communicate**: Keep your team in the loop about your changes, especially if they impact shared work.
-9. **Regular Syncs**: Frequently update your workspace with the server to stay current and minimize conflicts.
+Your workspace is your local copy of files from the server. Here's how to navigate it efficiently:
 
----
-### Working with Streams
+### 👀 Viewing Your Files
 
-Streams are branches defined with a purpose, making it easier to manage and integrate changes. Here’s how to work with them:
+1. Open the **Workspace Tree** tab:
+   - Menu: `View > Workspace Tree`
+   - Shortcut: `Ctrl + 0` (Windows) or `Cmd + 0` (macOS)
 
-1. **Viewing Stream Structure**:
-    - The ***Stream Graph*** tab in P4V gives you a graphical representation of your project's stream structure. Explore this view to understand how different streams relate to each other, such as mainline, development, and release streams.
-    - This view can be accessed through the menu by navigating to `View > Stream Graph` or by using the shortcut `Alt + 7` (Windows/Linux) or `Option + 7` (macOS).
-2. **Switching Streams**:
-    - If you need to work on a different part of the project, you can switch your workspace to another stream that is dedicated to that task (i.e. `dev`). There are a couple of ways to switch to a different stream. 
-        - Right-click your workspace name in the ***Workspaces*** tab and choose ***Edit Workspace***, then select the stream you wish to work on. In the Stream: dialog box, search for the desired stream. Hit ***Apply*** the ***OK***.
-        - Alternatively, you can use the ***Stream Graph*** tab. Grab the computer icon and drag it onto the stream you wish to switch to.
-        - <img src="https://i.postimg.cc/Lsbj02CG/p4v-stream-Graph-switch.gif">
-        - *You may at times be prompted to create a new workspace for a stream. This is okay to do, but first consider the impact additional workspaces may have on your workflow and p4v setup.*
-3. **Merging and Integrating Changes**:
-    - Streams facilitate merging changes from one branch to another. To merge, right-click on the stream you want to integrate changes into and select 'Merge/Integrate'. Follow the prompts to select the source stream and resolve any conflicts that arise.
-    - *Note: To successfully merge and integrate files into a stream, it must be set as your active working stream.*
-    - <img src="https://i.postimg.cc/FRk3M8wz/p4v-stream-Graph-merge.gif">
+   ![Workspace Tree](https://i.postimg.cc/k43L3FzN/p4v-workspace-Tree-tab.gif)
 
 ---
+Official Perforce Video: *Perforce Helix Core Beginner’s Guide: Submitting, Syncing, and Managing File Changes*
 
-### Additional/Optional: Command Line Basics
+<iframe width="640" height="315" src="https://www.youtube.com/embed/b0oe8UYdm7s?si=LIdTD77wofostoIM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-For those interested in exploring beyond the P4V client, here are a few basic command-line operations. These are optional but can offer more control and flexibility:
+---
+### 🔄 Syncing to the Latest Version
 
-- **Check Out a File**: `p4 edit <filename>`
-- **Submit Changes**: `p4 submit -d "Description of changes" <filename>`
-- **Sync Workspace**: `p4 sync`
+- Right-click your workspace and choose **Get Latest Revision**
+- Shortcut: `Ctrl + Shift + G` (Windows) or `Cmd + Shift + G` (macOS)
 
-These command-line operations are a glimpse into the power of Perforce from the terminal. They are particularly useful for advanced tasks or automation.
+   ![Get Latest](https://i.postimg.cc/QdzRSrqy/p4v-get-Latest.gif)
+
+### 🔒 Checking Out Files
+
+- Right-click a file and select **Check Out**
+- Shortcut: `Ctrl + E` (Windows) or `Cmd + E` (macOS)
+
+   ![Check Out](https://i.postimg.cc/j5HmsnYp/p4v-check-Out.gif)
+
+### 📤 Submitting Changes
+
+1. Go to the **Pending** tab
+2. Right-click your changelist and select **Submit**
+3. Enter a detailed description
+4. Click **Submit**
+
+   ![Submit Changes](https://i.postimg.cc/SRVP90sV/p4v-submit.gif)
+
+---
+
+## ✏️ Editing Files
+
+1. **Check Out**: Right-click the file and select 'Check Out'
+2. **Edit**: Make your changes using your preferred editor
+3. **Submit**: Right-click the edited file and select 'Submit'
+
+> [!warning] Remember
+> Always provide a clear, descriptive message when submitting changes!
+
+---
+
+## 📁 Adding Files
+
+1. **Create or Place Files** in your workspace
+2. In P4V, right-click and select **Mark for Add**
+3. **Submit** the changelist to add files to the depot
+
+   ![Adding Files](https://i.postimg.cc/HL7FhPZs/p4v-add.gif)
+
+---
+Official Perforce Video: *Perforce Helix Core Beginner’s Guide: Undoing Changes and Fixing Deleted Files*
+
+<iframe width="640" height="315" src="https://www.youtube.com/embed/JQAdYnZCv_g?si=WJxLYyMbI_asJtXJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
+## 🗑 Deleting Files
+
+> [!caution] Important
+> Always use P4V to delete files. Don't delete directly from your file system!
+
+1. **Locate Files**: In the Depot tab, find the file(s) you want to delete
+2. **Mark for Deletion**: Right-click and choose "Delete"
+3. **Submit the Change**:
+   - Go to the Pending tab
+   - Right-click the changelist and select "Submit"
+   - Enter a description explaining the deletion
+4. **Verify**: Check both the Depot tab and your local workspace to ensure the files are gone
+
+> [!tip] Tip
+> If files persist locally after deletion, try refreshing your workspace or syncing to the latest revision.
+
+---
+
+## 🌊 Working with Streams
+
+Streams are purpose-defined branches that make managing changes easier.
+
+1. **View Stream Structure**:
+   - Open the Stream Graph tab: `View > Stream Graph` or `Alt + 7`
+
+2. **Switch Streams**:
+   - Right-click your workspace, choose "Edit Workspace"
+   - Select the desired stream
+   - Or drag the computer icon in the Stream Graph
+
+   ![Switch Streams](https://i.postimg.cc/Lsbj02CG/p4v-stream-Graph-switch.gif)
+
+3. **Merge Changes**:
+   - Right-click the target stream and select 'Merge/Integrate'
+   - Follow prompts to resolve conflicts
+
+   ![Merge Streams](https://i.postimg.cc/FRk3M8wz/p4v-stream-Graph-merge.gif)
+
+> [!attention] Also see: 
+> [[Drexel Perforce/Perforce Streams/Branching, Merging, and Copying with Streams\|Branching, Merging, and Copying with Streams]]
+
+---
+
+## 💡 Best Practices
+
+1. **Sync Frequently**: Get the latest version before starting work
+2. **Check Out Wisely**: Only check out necessary files
+3. **Review Changes**: Use "Revert If Unchanged" before submitting
+4. **Descriptive Submissions**: Always provide clear commit messages
+5. **Communicate**: Keep your team informed about significant changes
+6. **Regular Syncs**: Update your workspace often to minimize conflicts
+
+---
+
+> [!note] Want to Learn More?
+> Check out the [Official Helix Core Documentation](https://help.perforce.com/helix-core/quickstart/Content/quickstart/end-user-reference.html) for in-depth information and advanced techniques!
+> Visit the [Perforce YouTube Channel](https://www.youtube.com/@PerforceSoftware) for video tutorials and references!
