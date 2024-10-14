@@ -1,40 +1,56 @@
+
 body {
     /* Drexel University Styling */
     font-family: 'Arial', sans-serif; /* Default typeface for most page text */
     background-color: #006699; /* Custom Background Color */
     color: #003B5C; /* Drexel Blue for Text Color */
+    margin: 0; /* Remove default margin for full width */
+    padding: 0; /* Remove default padding for full width */
 
-    /* Headers styled with Futura or similar, uppercase and bold for emphasis */
-    h1, h2, h3, h4, h5, h6 {
-     font-family: 'Futura', sans-serif; /* Using Futura for headers */
-        text-transform: uppercase;
-        font-weight: 500; /* Medium weight for a semi-condensed look */
-        color: #003B5C; /* Drexel Blue */
-    }
+    /* Set full-width container */
+    width: 100%;
+    max-width: 100%;
 
-    /* Links styled with Drexel Gold */
-    a {
-     color: #FFD600; /* Drexel Gold for Links */
-        text-decoration: none; /* No underline by default */
-    }
-    /* Targets links that start with 'http' and not containing your domain name as an assumption for external links */
-    a[href^="http"]:not([href*="yourdomain.com"]),
-    a[href^="https"]:not([href*="yourdomain.com"]) {
-        color: #FFD600; /* Drexel Gold for external links */
-        text-decoration: none; /* Optional: removes underline from links */
-    }
-    a:hover {
-     text-decoration: underline; /* Underline on hover */
-    }
-
-    /* Blockquotes with Georgia, italicized for emphasis */
-    blockquote {
-     font-family: 'Georgia', serif;
-     font-style: italic;
-     border-left: 4px solid #003B5C; /* Drexel Blue border for blockquotes */
-        padding-left: 16px;
-        color: #A7A9AC; /* Drexel Gray for text */
-    }
-
-    /* Additional custom styling as needed */
+    /* Normal line height for text */
+    line-height: 1.5;
 }
+
+/* Headers styled with Futura or similar, uppercase and bold for emphasis */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Futura', sans-serif; /* Using Futura for headers */
+    text-transform: uppercase;
+    font-weight: 500; /* Medium weight for a semi-condensed look */
+    color: #003B5C; /* Drexel Blue */
+    line-height: 1.2; /* Normal line height for headers */
+    margin-top: 1em; /* Add spacing between headers and text */
+    margin-bottom: 0.5em;
+}
+
+/* Links styled with Drexel Gold */
+a {
+    color: #FFD600; /* Drexel Gold for Links */
+    text-decoration: none; /* No underline by default */
+}
+
+/* Targets links that start with 'http' and not containing your domain name as an assumption for external links */
+a[href^="http"]:not([href*="yourdomain.com"]),
+a[href^="https"]:not([href*="yourdomain.com"]) {
+    color: #FFD600; /* Drexel Gold for external links */
+    text-decoration: none; /* Optional: removes underline from links */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Blockquotes with Georgia, italicized for emphasis */
+blockquote {
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    border-left: 4px solid #003B5C; /* Drexel Blue border for blockquotes */
+    padding-left: 16px;
+    color: #A7A9AC; /* Drexel Gray for text */
+    margin: 1em 0; /* Add margin around blockquotes */
+}
+
+/* Additional custom styling as needed */
