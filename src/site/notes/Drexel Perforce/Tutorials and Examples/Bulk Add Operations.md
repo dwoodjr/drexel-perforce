@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/drexel-perforce/tutorials-and-examples/bulk-add-operations/"}
+{"dg-publish":true,"permalink":"/drexel-perforce/tutorials-and-examples/bulk-add-operations/","noteIcon":""}
 ---
 
 # Integration of the Bulk Add Tool into P4 Admin
