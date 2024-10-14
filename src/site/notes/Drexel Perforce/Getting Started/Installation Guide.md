@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/drexel-perforce/getting-started/installation-guide/"}
+{"dg-publish":true,"permalink":"/drexel-perforce/getting-started/installation-guide/","noteIcon":""}
 ---
 
 # 🚀 Perforce Installation Guide for Drexel University
