@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/drexel-perforce/tutorials-and-examples/deleting-files/"}
+{"dg-publish":true,"permalink":"/drexel-perforce/tutorials-and-examples/deleting-files/","noteIcon":""}
 ---
 
 ## Proper Workflow for Deleting Files in P4V for Projects
