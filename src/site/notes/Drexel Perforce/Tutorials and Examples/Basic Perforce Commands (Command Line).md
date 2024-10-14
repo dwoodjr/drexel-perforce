@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/drexel-perforce/tutorials-and-examples/basic-perforce-commands-command-line/"}
+{"dg-publish":true,"permalink":"/drexel-perforce/tutorials-and-examples/basic-perforce-commands-command-line/","noteIcon":""}
 ---
 
 ## Overview
