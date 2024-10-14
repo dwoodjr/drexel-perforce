@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/drexel-perforce/best-practices/depot-structure-game-dev/"}
+{"dg-publish":true,"permalink":"/drexel-perforce/best-practices/depot-structure-game-dev/","noteIcon":""}
 ---
 
 
