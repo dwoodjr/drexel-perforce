@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/drexel-perforce/getting-started/introduction-to-perforce/"}
+{"dg-publish":true,"permalink":"/drexel-perforce/getting-started/introduction-to-perforce/","noteIcon":""}
 ---
 
 
