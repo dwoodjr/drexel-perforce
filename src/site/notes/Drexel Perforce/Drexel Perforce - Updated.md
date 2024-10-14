@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/drexel-perforce/drexel-perforce-updated/","contentClasses":"drexel","tags":["gardenEntry"]}
+{"dg-publish":true,"permalink":"/drexel-perforce/drexel-perforce-updated/","contentClasses":"drexel","tags":["gardenEntry"],"noteIcon":""}
 ---
 
 
