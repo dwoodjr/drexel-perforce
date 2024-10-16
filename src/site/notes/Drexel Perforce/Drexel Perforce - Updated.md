@@ -17,6 +17,14 @@ Welcome to the `Westphal Perforce Knowledge Hub`, a comprehensive resource desig
 
 ---
 
+> [!info] Work in Progress
+> Our Perforce knowledge hub is continuously evolving. We value your input to make it better!
+> 
+> **Have suggestions or spotted an area for improvement?**
+> 
+> [Leave feedback here](https://forms.office.com/r/Jv4C4AJyzi)
+
+---
 ## 🚀 Getting Started
 - [[Drexel Perforce/Getting Started/Introduction to Perforce\|Introduction to Perforce]]
    - What is Perforce?
@@ -75,5 +83,6 @@ Welcome to the `Westphal Perforce Knowledge Hub`, a comprehensive resource desig
 - [[Glossary of Perforce Terms\|Glossary of Perforce Terms]]
 
 ## 📊 Surveys and Assessments
+- [[Drexel Perforce/Surveys and Assessments/Knowledge Hub Feedback Form\|Knowledge Hub Feedback Form]]
 - [[Drexel Perforce/Surveys and Assessments/New User Survey\|New User Survey]]
 - [[Drexel Perforce/Surveys and Assessments/Experienced User Assessment\|Experienced User Assessment]]
