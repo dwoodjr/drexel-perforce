@@ -7,7 +7,19 @@ const tocPlugin = require("eleventy-plugin-nesting-toc");
 const { parse } = require("node-html-parser");
 const htmlMinifier = require("html-minifier-terser");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
-const markdownItMermaid = require("markdown-it-mermaid");
+const markdownIt = require("markdown-it");
+const markdownItMermaid = require("markdown-it-mermaid"); // Ensure this is installed properly
+
+let markdownLib = markdownIt({
+  html: true,
+  linkify: true,
+  typographer: true
+})
+    .use(require("markdown-it-anchor"), { permalink: false })
+    .use(markdownItMermaid); // Applying mermaid plugin here
+
+setLibrary("md", markdownLib);
+
 
 const { headerToId, namedHeadingsFilter } = require("./src/helpers/utils");
 const {
@@ -16,6 +28,7 @@ const {
 } = require("./src/helpers/userSetup");
 
 const Image = require("@11ty/eleventy-img");
+const {setLibrary} = require("@11ty/eleventy/src/UserConfig");
 function transformImage(src, cls, alt, sizes, widths = ["500", "700", "auto"]) {
   let options = {
     widths: widths,
