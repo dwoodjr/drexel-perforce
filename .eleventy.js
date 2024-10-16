@@ -133,7 +133,8 @@ module.exports = function (eleventyConfig) {
       openMarker: "```plantuml",
       closeMarker: "```",
     })
-    .use(namedHeadingsFilter)
+      .use(require("markdown-it-mermaid"))
+      .use(namedHeadingsFilter)
     .use(function (md) {
       //https://github.com/DCsunset/markdown-it-mermaid-plugin
       const origFenceRule =
@@ -145,7 +146,7 @@ module.exports = function (eleventyConfig) {
         const token = tokens[idx];
         if (token.info === "mermaid") {
           const code = token.content.trim();
-          return `<pre class="mermaid">${code}</pre>`;
+          return `<div class="mermaid-diagram">${code}</div>`;
         }
         if (token.info === "transclusion") {
           const code = token.content.trim();
@@ -507,6 +508,23 @@ module.exports = function (eleventyConfig) {
       outputPath &&
       outputPath.endsWith(".html")
     ) {
+
+      // Skip minification for Mermaid diagrams
+      const regexMermaid = /<div class="mermaid-diagram">[\s\S]*?<\/div>/g;
+      let preservedMermaid = [];
+      let match;
+
+      // Extract mermaid diagrams before minification
+      while ((match = regexMermaid.exec(content)) !== null) {
+        preservedMermaid.push(match[0]);
+        content = content.replace(match[0], `<!-- MERMAID_PLACEHOLDER_${preservedMermaid.length - 1} -->`);
+      }
+
+      // Restore Mermaid diagrams after minification
+      preservedMermaid.forEach((diagram, index) => {
+        content = content.replace(`<!-- MERMAID_PLACEHOLDER_${index} -->`, diagram);
+      });
+
       return htmlMinifier.minify(content, {
         useShortDoctype: true,
         removeComments: true,
