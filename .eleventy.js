@@ -510,42 +510,49 @@ module.exports = function (eleventyConfig) {
     ) {
       // Ensure content is a string before proceeding
       if (typeof content !== "string") {
-        return content;
+        console.error(`Expected content to be a string, but got ${typeof content}. Skipping minification for: ${outputPath}`);
+        return content; // Return the content unchanged if it's not a string
       }
 
-      // Regular expression to find Mermaid diagrams
-      const mermaidRegex = /<div class="mermaid-diagram">[\s\S]*?<\/div>/g;
-      let preservedMermaid = [];
-      let match;
+      try {
+        // Regular expression to find Mermaid diagrams
+        const mermaidRegex = /<div class="mermaid-diagram">[\s\S]*?<\/div>/g;
+        let preservedMermaid = [];
+        let match;
 
-      // Extract Mermaid diagrams before minification
-      while ((match = mermaidRegex.exec(content)) !== null) {
-        preservedMermaid.push(match[0]);
-        content = content.replace(match[0], `<!-- MERMAID_PLACEHOLDER_${preservedMermaid.length - 1} -->`);
+        // Extract Mermaid diagrams before minification
+        while ((match = mermaidRegex.exec(content)) !== null) {
+          preservedMermaid.push(match[0]);
+          content = content.replace(match[0], `<!-- MERMAID_PLACEHOLDER_${preservedMermaid.length - 1} -->`);
+        }
+
+        // Minify the rest of the content
+        content = htmlMinifier.minify(content, {
+          useShortDoctype: true,
+          removeComments: true,
+          collapseWhitespace: true,
+          conservativeCollapse: true,
+          preserveLineBreaks: true,
+          minifyCSS: true,
+          minifyJS: true,
+          keepClosingSlash: true,
+        });
+
+        // Restore Mermaid diagrams after minification
+        preservedMermaid.forEach((diagram, index) => {
+          content = content.replace(`<!-- MERMAID_PLACEHOLDER_${index} -->`, diagram);
+        });
+
+      } catch (error) {
+        // Log the error and skip minification if there's an issue
+        console.error(`Error during HTML minification for: ${outputPath}`, error);
       }
-
-      // Minify the rest of the content
-      content = htmlMinifier.minify(content, {
-        useShortDoctype: true,
-        removeComments: true,
-        collapseWhitespace: true,
-        conservativeCollapse: true,
-        preserveLineBreaks: true,
-        minifyCSS: true,
-        minifyJS: true,
-        keepClosingSlash: true,
-      });
-
-      // Restore Mermaid diagrams after minification
-      preservedMermaid.forEach((diagram, index) => {
-        content = content.replace(`<!-- MERMAID_PLACEHOLDER_${index} -->`, diagram);
-      });
 
       return content;
     }
+
     return content;
   });
-
 
 
   eleventyConfig.addPassthroughCopy("src/site/img");
