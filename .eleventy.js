@@ -7,16 +7,6 @@ const tocPlugin = require("eleventy-plugin-nesting-toc");
 const { parse } = require("node-html-parser");
 const htmlMinifier = require("html-minifier-terser");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
-const markdownItMermaid = require("markdown-it-mermaid"); // Ensure this is installed properly
-
-let markdownLib = markdownIt({
-  html: true,
-  linkify: true,
-  typographer: true
-})
-    .use(require("markdown-it-anchor"), { permalink: false })
-    .use(markdownItMermaid); // Applying mermaid plugin here
-
 
 const { headerToId, namedHeadingsFilter } = require("./src/helpers/utils");
 const {
@@ -144,7 +134,6 @@ module.exports = function (eleventyConfig) {
       openMarker: "```plantuml",
       closeMarker: "```",
     })
-      .use(markdownItMermaid)
       .use(namedHeadingsFilter)
     .use(function (md) {
       //https://github.com/DCsunset/markdown-it-mermaid-plugin
@@ -514,29 +503,20 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addTransform("htmlMinifier", (content, outputPath) => {
-    if (
-      (process.env.NODE_ENV === "production" || process.env.ELEVENTY_ENV === "prod") &&
-      outputPath &&
-      outputPath.endsWith(".html")
-    ) {
-
-      // Skip minification for Mermaid diagrams
-      const regexMermaid = /<div class="mermaid-diagram">[\s\S]*?<\/div>/g;
+    if ((process.env.NODE_ENV === "production" || process.env.ELEVENTY_ENV === "prod") && outputPath && outputPath.endsWith(".html")) {
+      // Regular expression to find Mermaid diagrams
+      const mermaidRegex = /<div class="mermaid-diagram">[\s\S]*?<\/div>/g;
       let preservedMermaid = [];
       let match;
 
-      // Extract mermaid diagrams before minification
-      while ((match = regexMermaid.exec(content)) !== null) {
+      // Extract Mermaid diagrams before minification
+      while ((match = mermaidRegex.exec(content)) !== null) {
         preservedMermaid.push(match[0]);
         content = content.replace(match[0], `<!-- MERMAID_PLACEHOLDER_${preservedMermaid.length - 1} -->`);
       }
 
-      // Restore Mermaid diagrams after minification
-      preservedMermaid.forEach((diagram, index) => {
-        content = content.replace(`<!-- MERMAID_PLACEHOLDER_${index} -->`, diagram);
-      });
-
-      return htmlMinifier.minify(content, {
+      // Minify the rest of the content
+      content = htmlMinifier.minify(content, {
         useShortDoctype: true,
         removeComments: true,
         collapseWhitespace: true,
@@ -546,9 +526,17 @@ module.exports = function (eleventyConfig) {
         minifyJS: true,
         keepClosingSlash: true,
       });
+
+      // Restore Mermaid diagrams after minification
+      preservedMermaid.forEach((diagram, index) => {
+        content = content.replace(`<!-- MERMAID_PLACEHOLDER_${index} -->`, diagram);
+      });
+
+      return content;
     }
     return content;
   });
+
 
   eleventyConfig.addPassthroughCopy("src/site/img");
   eleventyConfig.addPassthroughCopy("src/site/scripts");
