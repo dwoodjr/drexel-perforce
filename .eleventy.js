@@ -503,7 +503,16 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addTransform("htmlMinifier", (content, outputPath) => {
-    if ((process.env.NODE_ENV === "production" || process.env.ELEVENTY_ENV === "prod") && outputPath && outputPath.endsWith(".html")) {
+    if (
+        (process.env.NODE_ENV === "production" || process.env.ELEVENTY_ENV === "prod") &&
+        outputPath &&
+        outputPath.endsWith(".html")
+    ) {
+      // Ensure content is a string before proceeding
+      if (typeof content !== "string") {
+        return content;
+      }
+
       // Regular expression to find Mermaid diagrams
       const mermaidRegex = /<div class="mermaid-diagram">[\s\S]*?<\/div>/g;
       let preservedMermaid = [];
@@ -536,6 +545,7 @@ module.exports = function (eleventyConfig) {
     }
     return content;
   });
+
 
 
   eleventyConfig.addPassthroughCopy("src/site/img");
