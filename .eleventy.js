@@ -7,6 +7,7 @@ const tocPlugin = require("eleventy-plugin-nesting-toc");
 const { parse } = require("node-html-parser");
 const htmlMinifier = require("html-minifier-terser");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const markdownItMermaid = require("markdown-it-mermaid");
 
 const { headerToId, namedHeadingsFilter } = require("./src/helpers/utils");
 const {
@@ -133,7 +134,7 @@ module.exports = function (eleventyConfig) {
       openMarker: "```plantuml",
       closeMarker: "```",
     })
-      .use(require("markdown-it-mermaid"))
+      .use(markdownItMermaid)
       .use(namedHeadingsFilter)
     .use(function (md) {
       //https://github.com/DCsunset/markdown-it-mermaid-plugin
